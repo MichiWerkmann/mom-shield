@@ -12,11 +12,13 @@
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="index.html">
-        <img src="assets/icon48.png" alt="MOM Shield logo">
+        <img src="assets/icon48.png" alt="MOM Shield icon">
         <span>MOM Shield</span>
       </a>
       <div class="nav-links">
         <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#screenshots">Screenshots</a>
         <a href="#how-it-works">How it works</a>
         <a href="privacy.html">Privacy</a>
         <a href="support.html">Support</a>
@@ -27,12 +29,12 @@
   <main>
     <section class="hero">
       <div class="hero-inner">
-        <div class="hero-brand">
-          <img src="assets/icon128.png" alt="MOM Shield extension icon">
-          <div>
-            <p class="eyebrow">Privacy Masking for AI</p>
-            <h1>MOM Shield</h1>
-          </div>
+        <div class="hero-logo-panel">
+          <img src="assets/logo.png" alt="MOM Shield - Privacy Masking for AI">
+        </div>
+        <div>
+          <p class="eyebrow">Privacy Masking for AI</p>
+          <h1>MOM Shield</h1>
         </div>
         <p class="hero-copy">
           Mask sensitive data locally before it reaches ChatGPT, Claude, Gemini, or Grok. MOM Shield helps you work with AI while reducing accidental exposure of personal data, credentials, and document content.
@@ -48,6 +50,21 @@
           <span class="pill">Currently free</span>
         </div>
       </div>
+    </section>
+
+    <section class="section media-section" id="demo">
+      <p class="section-kicker">Product demo</p>
+      <h2>See MOM Shield in action.</h2>
+      <p class="lead">
+        The demo shows how sensitive client data is turned into placeholders before the prompt is submitted to an AI chat.
+      </p>
+      <figure class="media-frame">
+        <video controls preload="metadata" poster="assets/after-masking.jpg">
+          <source src="assets/demo-usecase.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Demo use case: mask customer details before using an AI assistant.</figcaption>
+      </figure>
     </section>
 
     <section class="section" id="features">
@@ -84,6 +101,33 @@
       </div>
     </section>
 
+    <section class="section" id="screenshots">
+      <p class="section-kicker">Screenshots</p>
+      <h2>Before, after, and upload protection.</h2>
+      <p class="lead">
+        These screenshots show the extension state, manual masking controls, protected uploads, and the masked prompt sent to the AI service.
+      </p>
+
+      <div class="showcase">
+        <figure class="screenshot large">
+          <img src="assets/before-masking.jpg" alt="ChatGPT prompt before MOM Shield masking">
+          <figcaption>Before masking: client data is still visible in the prompt.</figcaption>
+        </figure>
+        <figure class="screenshot large">
+          <img src="assets/after-masking.jpg" alt="ChatGPT response after MOM Shield masks sensitive data">
+          <figcaption>After masking: the AI receives placeholders instead of personal data.</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <img src="assets/upload-protection.png" alt="MOM Shield upload protection replacing sensitive values">
+          <figcaption>Upload protection: supported files are processed locally before submission.</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <img src="assets/inactive.png" alt="MOM Shield inactive state in ChatGPT">
+          <figcaption>Inactive state: controls are clearly visible when protection is turned off.</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section" id="how-it-works">
       <p class="section-kicker">Flow</p>
       <h2>Local first, then submit.</h2>
@@ -111,10 +155,10 @@
       <p class="section-kicker">Supported AI chats</p>
       <h2>Works across major AI chat sites.</h2>
       <div class="supported">
-        <div>ChatGPT</div>
-        <div>Claude</div>
-        <div>Gemini</div>
-        <div>Grok</div>
+        <div><img src="assets/chatgpt-logo.svg" alt="ChatGPT"></div>
+        <div><img src="assets/claude-logo.svg" alt="Claude"></div>
+        <div><img src="assets/gemini-logo.svg" alt="Gemini"></div>
+        <div><img src="assets/grok-logo.svg" alt="Grok"></div>
       </div>
     </section>
 

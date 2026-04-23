@@ -2,6 +2,17 @@
 
 This folder is ready for GitHub Pages.
 
+Included media assets:
+
+- `assets/logo.png`
+- `assets/demo-usecase.mp4`
+- `assets/before-masking.jpg`
+- `assets/after-masking.jpg`
+- `assets/upload-protection.png`
+- `assets/inactive.png`
+
+The demo video is about 52 MB. GitHub Pages can serve it, but page loading will be faster if you later compress the video or host it on YouTube and embed it.
+
 Recommended GitHub Pages setup:
 
 1. Push this repository to GitHub.
