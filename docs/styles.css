@@ -371,8 +371,9 @@ h3 {
 }
 
 .screenshot img {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
   object-position: center;
 }
 
