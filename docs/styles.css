@@ -132,6 +132,89 @@ video {
   padding: 88px 0 72px;
 }
 
+.hero-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.hero-copy-block {
+  min-width: 0;
+}
+
+.hero-brand-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.brand-showcase,
+.platform-rail {
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(9, 19, 33, 0.72);
+  box-shadow: var(--shadow-dark);
+}
+
+.brand-showcase {
+  padding: 12px;
+}
+
+.brand-showcase img {
+  width: 100%;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.platform-rail {
+  padding: 18px;
+}
+
+.platform-label {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.platform-copy {
+  margin: 0 0 16px;
+  color: rgba(236, 244, 255, 0.76);
+  font-size: 15px;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.platform-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 14px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.platform-chip img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.platform-chip span {
+  color: rgba(236, 244, 255, 0.92);
+  font-size: 14px;
+  font-weight: 750;
+}
+
 .hero-kicker,
 .section-kicker,
 .notice-kicker,
@@ -708,6 +791,7 @@ h3 {
     font-size: 38px;
   }
 
+  .hero-head,
   .hero-scene {
     grid-template-columns: 1fr;
   }
@@ -766,6 +850,10 @@ h3 {
     font-size: 30px;
   }
 
+  .platform-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -803,8 +891,13 @@ h3 {
   .feature-tile,
   .workflow-step,
   .notice,
-  .content section {
+  .content section,
+  .platform-rail {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr;
   }
 }
