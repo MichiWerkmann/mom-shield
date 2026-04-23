@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MOM Shield - Privacy Masking for AI</title>
-  <meta name="description" content="MOM Shield masks sensitive data locally before sending prompts or files to AI chat services.">
+  <title>MOM Shield - Catch Sensitive Data Before AI Sees It</title>
+  <meta name="description" content="MOM Shield watches over prompts and uploads, masks sensitive data before it leaves your browser, intercepts accidental sends, and restores readable replies on your device.">
   <link rel="icon" href="assets/icon48.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,10 +16,9 @@
         <span>MOM Shield</span>
       </a>
       <div class="nav-links">
-        <a href="#features">Features</a>
+        <a href="#features">Protection</a>
+        <a href="#proof">Proof</a>
         <a href="#demo">Demo</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#how-it-works">How it works</a>
         <a href="privacy.html">Privacy</a>
         <a href="support.html">Support</a>
       </div>
@@ -28,149 +27,239 @@
 
   <main>
     <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-logo-panel">
-          <img src="assets/logo.png" alt="MOM Shield - Privacy Masking for AI">
-        </div>
-        <div>
-          <p class="eyebrow">Privacy Masking for AI</p>
-          <h1>MOM Shield</h1>
-        </div>
+      <div class="shell hero-shell">
+        <p class="hero-kicker">Protective instinct for AI work</p>
+        <h1>Catch sensitive data before AI sees it.</h1>
         <p class="hero-copy">
-          Mask sensitive data locally before it reaches ChatGPT, Claude, Gemini, or Grok. MOM Shield helps you work with AI while reducing accidental exposure of personal data, credentials, and document content.
+          MOM Shield is built for the moment people move too fast. It watches over prompts and file uploads, masks sensitive data before it leaves your browser, intercepts accidental sends, and can restore readable replies on your device so the workflow still feels natural.
         </p>
+
         <div class="hero-actions">
-          <a class="button disabled" aria-disabled="true">Chrome Web Store coming soon</a>
-          <a class="button secondary" href="privacy.html">Read privacy policy</a>
+          <a class="button button-primary" href="#proof">See the protection</a>
+          <a class="button button-secondary" href="#demo">Watch the demo</a>
+          <a class="text-link" href="privacy.html">Read privacy policy</a>
         </div>
-        <div class="trust-row" aria-label="Product highlights">
+
+        <div class="hero-pills" aria-label="Product highlights">
+          <span class="pill">Currently free</span>
           <span class="pill">Local browser-side processing</span>
           <span class="pill">No masking backend</span>
           <span class="pill">Prompt and upload protection</span>
-          <span class="pill">Currently free</span>
+        </div>
+
+        <div class="hero-scene" aria-label="Before and after masking example">
+          <div class="scene-panel">
+            <p class="scene-label">Before send</p>
+            <p class="scene-title">Real client data is still in the prompt.</p>
+            <div class="code-window">
+              <span>Client: Sarah Thompson</span>
+              <span>Email: sarah.thompson@example.com</span>
+              <span>Phone: +1 415 555 0198</span>
+              <span>IBAN: GB82 WEST 1234 5698 7654 32</span>
+            </div>
+          </div>
+
+          <div class="scene-core">
+            <div class="core-badge">
+              <img src="assets/icon128.png" alt="MOM Shield badge">
+            </div>
+            <p class="scene-label">Intercept</p>
+            <h2>MOM steps in first.</h2>
+            <p class="core-copy">
+              The point is not perfect behavior. The point is catching the rushed send, the pasted customer record, and the upload that should have been scrubbed first.
+            </p>
+            <div class="core-points">
+              <span>Automatic prompt masking</span>
+              <span>Reply restoration on your device</span>
+              <span>Files masked before upload</span>
+            </div>
+          </div>
+
+          <div class="scene-panel">
+            <p class="scene-label">What AI receives</p>
+            <p class="scene-title">Structured placeholders instead of exposure.</p>
+            <div class="code-window code-window-masked">
+              <span>Client: [[PERSON_001]]</span>
+              <span>Email: [[EMAIL_001]]</span>
+              <span>Phone: [[PHONE_001]]</span>
+              <span>IBAN: [[IBAN_001]]</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="hero-note">
+          One accidental click is enough. MOM Shield is designed for that exact moment.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light" id="features">
+      <div class="shell">
+        <p class="section-kicker">Why MOM</p>
+        <h2>Built around a protective instinct, not a compliance dashboard.</h2>
+        <p class="lead">
+          MOM Shield is named for a simple idea: the best protection is the one that notices when something sensitive is about to go out the door and quietly stops it first. It does not ask people to work like machines. It protects the way people actually use AI.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-tile">
+            <p class="feature-index">01</p>
+            <h3>Watches before you send</h3>
+            <p>Prompt masking runs before submission, so sensitive values are caught before they leave your browser.</p>
+          </article>
+          <article class="feature-tile">
+            <p class="feature-index">02</p>
+            <h3>Catches accidental sends</h3>
+            <p>If you hit Send too fast, MOM Shield still intercepts the prompt first instead of letting raw data slip through.</p>
+          </article>
+          <article class="feature-tile">
+            <p class="feature-index">03</p>
+            <h3>Restores readable replies</h3>
+            <p>Masked placeholders can be restored on your device so the response stays useful instead of turning into a token wall.</p>
+          </article>
+          <article class="feature-tile">
+            <p class="feature-index">04</p>
+            <h3>Protects files before upload</h3>
+            <p>Supported uploads are masked first, then sent, so documents get the same protection as prompts.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section media-section" id="demo">
-      <p class="section-kicker">Product demo</p>
-      <h2>See MOM Shield in action.</h2>
-      <p class="lead">
-        The demo shows how sensitive client data is turned into placeholders before the prompt is submitted to an AI chat.
-      </p>
-      <figure class="media-frame">
-        <video controls preload="metadata" poster="assets/after-masking.jpg">
-          <source src="assets/demo-usecase.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>Demo use case: mask customer details before using an AI assistant.</figcaption>
-      </figure>
-    </section>
+    <section class="section section-dark" id="proof">
+      <div class="shell">
+        <p class="section-kicker">Proof</p>
+        <h2>See the difference in one glance.</h2>
+        <p class="lead">
+          On the left, the original prompt still contains personal data. On the right, MOM Shield has already converted it into safe placeholders before the AI sees it.
+        </p>
 
-    <section class="section" id="features">
-      <p class="section-kicker">Core protection</p>
-      <h2>Built for everyday AI work with sensitive material.</h2>
-      <p class="lead">
-        MOM Shield replaces detected personal and sensitive values with placeholders before supported prompts or files are submitted.
-      </p>
-      <div class="grid">
-        <article class="card">
-          <h3>Prompt masking</h3>
-          <p>Automatically masks supported values before clicking Send, pressing Enter, or submitting a supported chat form.</p>
-        </article>
-        <article class="card">
-          <h3>Upload masking</h3>
-          <p>Processes supported text, DOCX, XLSX, and text-based PDF files locally before the AI chat service receives them.</p>
-        </article>
-        <article class="card">
-          <h3>Strict privacy mode</h3>
-          <p>Blocks maskable uploads when processing fails, so unsupported files do not pass through unchanged in strict mode.</p>
-        </article>
-        <article class="card">
-          <h3>Local unmask history</h3>
-          <p>Optionally keeps local placeholder mappings so masked responses can be restored on your device.</p>
-        </article>
-        <article class="card">
-          <h3>Credential detection</h3>
-          <p>Detects common secrets such as API keys, tokens, JWTs, password fields, and bearer authorization values.</p>
-        </article>
-        <article class="card">
-          <h3>Personal data detection</h3>
-          <p>Supports names, email addresses, phone numbers, IBANs, addresses, IDs, and financial values in matching contexts.</p>
-        </article>
+        <div class="comparison-grid">
+          <figure class="media-block">
+            <div class="media-tag">Before MOM</div>
+            <img src="assets/before-masking.jpg" alt="Prompt before MOM Shield masking">
+            <figcaption>Original prompt with client details still visible inside the composer.</figcaption>
+          </figure>
+          <figure class="media-block">
+            <div class="media-tag media-tag-accent">After MOM</div>
+            <img src="assets/after-masking.jpg" alt="Prompt after MOM Shield masking">
+            <figcaption>Personal data is replaced with structured placeholders before the AI receives the prompt.</figcaption>
+          </figure>
+        </div>
+
+        <div class="proof-points">
+          <article>
+            <h3>Built for rushed behavior</h3>
+            <p>MOM Shield protects the moment users paste too much or click too quickly.</p>
+          </article>
+          <article>
+            <h3>Readable by design</h3>
+            <p>The AI still gets enough structure to do the job while the sensitive values stay out.</p>
+          </article>
+          <article>
+            <h3>Automatic, not ceremonial</h3>
+            <p>The protection sits in the workflow instead of asking users to stop and manually sanitize every time.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="screenshots">
-      <p class="section-kicker">Screenshots</p>
-      <h2>Before, after, and upload protection.</h2>
-      <p class="lead">
-        These screenshots show the extension state, manual masking controls, protected uploads, and the masked prompt sent to the AI service.
-      </p>
+    <section class="section section-light" id="workflow">
+      <div class="shell">
+        <p class="section-kicker">Workflow coverage</p>
+        <h2>Protection that follows the way people actually work.</h2>
 
-      <div class="showcase">
-        <figure class="screenshot large">
-          <img src="assets/before-masking.jpg" alt="ChatGPT prompt before MOM Shield masking">
-          <figcaption>Before masking: client data is still visible in the prompt.</figcaption>
-        </figure>
-        <figure class="screenshot large">
-          <img src="assets/after-masking.jpg" alt="ChatGPT response after MOM Shield masks sensitive data">
-          <figcaption>After masking: the AI receives placeholders instead of personal data.</figcaption>
-        </figure>
-        <figure class="screenshot">
-          <img src="assets/upload-protection.png" alt="MOM Shield upload protection replacing sensitive values">
-          <figcaption>Upload protection: supported files are processed locally before submission.</figcaption>
-        </figure>
-        <figure class="screenshot">
-          <img src="assets/inactive.png" alt="MOM Shield inactive state in ChatGPT">
-          <figcaption>Inactive state: controls are clearly visible when protection is turned off.</figcaption>
+        <div class="workflow-grid">
+          <article class="workflow-step">
+            <p class="workflow-number">01</p>
+            <h3>Paste or type normally</h3>
+            <p>Client notes, identifiers, contact records, internal context, and copied snippets are handled in place.</p>
+          </article>
+          <article class="workflow-step">
+            <p class="workflow-number">02</p>
+            <h3>Mask before send</h3>
+            <p>Before the prompt leaves the browser, MOM Shield swaps sensitive values for placeholders.</p>
+          </article>
+          <article class="workflow-step">
+            <p class="workflow-number">03</p>
+            <h3>Restore the reply</h3>
+            <p>When local history is available, placeholders can be restored on your device so the answer stays readable.</p>
+          </article>
+          <article class="workflow-step">
+            <p class="workflow-number">04</p>
+            <h3>Mask uploads first</h3>
+            <p>Supported files are processed before upload, so document protection happens before the AI service receives them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-neutral">
+      <div class="shell">
+        <p class="section-kicker">Operational details</p>
+        <h2>Visible protection, not hidden magic.</h2>
+        <p class="lead">
+          MOM Shield shows what is happening at the exact moments that matter: when a file is being protected before upload and when protection is turned off.
+        </p>
+
+        <div class="detail-grid">
+          <figure class="detail-block">
+            <div class="detail-copy">
+              <p class="detail-label">Upload protection</p>
+              <h3>Files are masked before they leave your browser.</h3>
+              <p>Supported uploads are processed locally first, then handed off, so sensitive values are not sent in raw form by mistake.</p>
+            </div>
+            <img src="assets/upload-protection.png" alt="Upload masking in MOM Shield">
+          </figure>
+          <figure class="detail-block">
+            <div class="detail-copy">
+              <p class="detail-label">Control state</p>
+              <h3>Protection stays obvious and controllable.</h3>
+              <p>Users can clearly see when MOM Shield is active or inactive, which makes the product feel trustworthy instead of opaque.</p>
+            </div>
+            <img src="assets/inactive.png" alt="MOM Shield inactive state">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="demo">
+      <div class="shell">
+        <p class="section-kicker">Demo</p>
+        <h2>Watch the full flow.</h2>
+        <p class="lead">
+          The demo shows the exact behavior that makes MOM Shield different: sensitive data is caught before submission, uploads are protected before transfer, and the workflow stays readable instead of turning into manual cleanup.
+        </p>
+
+        <figure class="demo-frame">
+          <video controls preload="metadata" playsinline>
+            <source src="assets/demo-usecase.mp4" type="video/mp4">
+            Your browser does not support the demo video.
+          </video>
+          <figcaption>Prompt protection, accidental-send interception, and masked uploads in one workflow.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" id="how-it-works">
-      <p class="section-kicker">Flow</p>
-      <h2>Local first, then submit.</h2>
-      <div class="step-list">
-        <article class="step">
-          <h3>Type or upload</h3>
-          <p>Enter a prompt or select a supported file inside a supported AI chat website.</p>
-        </article>
-        <article class="step">
-          <h3>Detect</h3>
-          <p>MOM Shield checks the content locally in your browser using built-in detection rules.</p>
-        </article>
-        <article class="step">
-          <h3>Mask</h3>
-          <p>Detected sensitive values are replaced with structured placeholders before submission.</p>
-        </article>
-        <article class="step">
-          <h3>Send</h3>
-          <p>The AI service receives the masked prompt or replacement upload, not the detected original values.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-kicker">Supported AI chats</p>
-      <h2>Works across major AI chat sites.</h2>
-      <div class="supported">
-        <div><img src="assets/chatgpt-logo.svg" alt="ChatGPT"></div>
-        <div><img src="assets/claude-logo.svg" alt="Claude"></div>
-        <div><img src="assets/gemini-logo.svg" alt="Gemini"></div>
-        <div><img src="assets/grok-logo.svg" alt="Grok"></div>
-      </div>
-    </section>
-
-    <section class="section tight">
-      <div class="notice">
-        <strong>Availability:</strong> MOM Shield is currently available free of charge. Optional paid features may be introduced in the future. The current version does not use a provider-operated masking backend.
+    <section class="section section-light">
+      <div class="shell">
+        <div class="notice">
+          <p class="notice-kicker">Availability</p>
+          <h2>Privacy without friction.</h2>
+          <p>
+            MOM Shield is currently available free of charge. Optional paid features may be introduced later. The current version performs masking locally in the browser and does not use a provider-operated masking backend.
+          </p>
+          <div class="closing-actions">
+            <a class="button button-primary" href="#demo">Watch the demo</a>
+            <a class="button button-secondary" href="support.html">Open support</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="shell footer-inner">
       <div>&copy; 2026 MOM Shield. All rights reserved.</div>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
