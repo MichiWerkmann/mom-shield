@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Claude</title>
+  <g fill="#111111">
+    <path d="M63.7 12 75 49.5l39-10.4-27.8 28.5L116 96 77 86.1 64 116 51 86.1 12 96l29.8-28.4L14 39.1l39 10.4L63.7 12Z"/>
+    <circle cx="64" cy="64" r="16" fill="#ffffff"/>
+  </g>
+</svg>

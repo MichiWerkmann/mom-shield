@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Grok</title>
+  <g fill="none" stroke="#111111" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27 25l74 78"/>
+    <path d="M101 25 27 103"/>
+    <path d="M42 25h59v59"/>
+  </g>
+</svg>
