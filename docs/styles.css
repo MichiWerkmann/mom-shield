@@ -88,6 +88,20 @@ video {
   white-space: nowrap;
 }
 
+.brand-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.12em;
+}
+
+.brand-mom {
+  color: var(--ink);
+}
+
+.brand-shield {
+  color: var(--accent);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
