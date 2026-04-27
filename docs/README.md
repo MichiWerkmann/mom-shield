@@ -11,8 +11,6 @@ Included media assets:
 - `assets/upload-protection.png`
 - `assets/inactive.png`
 
-The demo video is about 52 MB. GitHub Pages can serve it, but page loading will be faster if you later compress the video or host it on YouTube and embed it.
-
 Recommended GitHub Pages setup:
 
 1. Push this repository to GitHub.
@@ -24,9 +22,9 @@ Recommended GitHub Pages setup:
 
 Use these URLs in the Chrome Web Store after GitHub Pages is live:
 
-- Website URL: `https://YOUR-GITHUB-USER.github.io/YOUR-REPO/`
-- Privacy Policy URL: `https://YOUR-GITHUB-USER.github.io/YOUR-REPO/privacy.html`
-- Support URL: `https://YOUR-GITHUB-USER.github.io/YOUR-REPO/support.html`
+- Website URL: `https://michiwerkmann.github.io/mom-shield/`
+- Privacy Policy URL: `https://michiwerkmann.github.io/mom-shield/privacy.html`
+- Support URL: `https://michiwerkmann.github.io/mom-shield/support.html`
 
 Before publishing, verify provider details in:
 
