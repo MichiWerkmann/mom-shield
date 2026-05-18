@@ -718,6 +718,10 @@ h3 {
   box-shadow: var(--shadow-dark);
 }
 
+.video-page-cta {
+  margin-top: 18px;
+}
+
 .demo-frame video {
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -774,6 +778,109 @@ h3 {
   border-radius: var(--radius);
   background: var(--surface-strong);
   box-shadow: var(--shadow-light);
+}
+
+.video-page {
+  background: var(--surface);
+}
+
+.video-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(23, 144, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, #091321 0%, #07111c 100%);
+  color: var(--ink);
+}
+
+.video-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.video-shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: 22px;
+  padding: 88px 0 72px;
+  align-items: start;
+}
+
+.video-copy {
+  min-width: 0;
+}
+
+.video-lead {
+  color: rgba(236, 244, 255, 0.82);
+}
+
+.video-points {
+  display: grid;
+  gap: 16px;
+}
+
+.video-point,
+.video-detail-card {
+  padding: 24px;
+  border-radius: var(--radius);
+}
+
+.video-point {
+  border: 1px solid var(--line-dark);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: var(--shadow-dark);
+}
+
+.video-point p:last-child,
+.video-detail-card p:last-child {
+  margin-bottom: 0;
+}
+
+.promo-video-frame {
+  margin: 0;
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-light);
+}
+
+.promo-video-frame video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0a1320;
+}
+
+.promo-video-frame figcaption {
+  padding: 14px 16px 18px;
+  color: var(--muted-dark);
+  font-size: 14px;
+  border-top: 1px solid var(--line-light);
+}
+
+.video-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.video-detail-card {
+  border: 1px solid var(--line-light);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-light);
+}
+
+.video-detail-card p {
+  color: var(--muted-dark);
+  font-size: 16px;
 }
 
 .content h2 {
@@ -854,7 +961,8 @@ h3 {
   }
 
   .hero-head,
-  .hero-scene {
+  .hero-scene,
+  .video-shell {
     grid-template-columns: 1fr;
   }
 
@@ -863,7 +971,8 @@ h3 {
   .comparison-grid,
   .detail-grid,
   .proof-points,
-  .workflow-grid {
+  .workflow-grid,
+  .video-detail-grid {
     grid-template-columns: 1fr;
   }
 }

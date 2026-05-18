@@ -6,6 +6,7 @@ Included media assets:
 
 - `assets/logo.png`
 - `assets/demo-usecase.mp4`
+- `assets/mom-shield-promo.mp4`
 - `assets/before-masking.jpg`
 - `assets/after-masking.jpg`
 - `assets/upload-protection.png`
