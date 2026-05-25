@@ -19,6 +19,7 @@
         <a href="#features">Protection</a>
         <a href="#proof">Proof</a>
         <a href="#demo">Demo</a>
+        <a href="#download" class="nav-cta">Download</a>
         <a href="video.html">Video</a>
         <a href="privacy.html">Privacy</a>
         <a href="support.html">Support</a>
@@ -38,7 +39,7 @@
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#proof">See the protection</a>
+              <a class="button button-primary" href="#download">Download for Windows</a>
               <a class="button button-secondary" href="#demo">Watch the demo</a>
               <a class="button button-secondary" href="video.html">Open video page</a>
               <a class="text-link" href="privacy.html">Read privacy policy</a>
@@ -334,6 +335,78 @@
         <div class="video-page-cta">
           <a class="button button-secondary" href="video.html">Open the dedicated video page</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="download">
+      <div class="shell">
+        <p class="section-kicker">Download</p>
+        <h2>MOM Shield für Windows</h2>
+        <p class="lead">
+          Direkt-Download als Installer. Die App installiert sich pro Nutzer
+          unter <code>%LOCALAPPDATA%</code>, ohne Admin-Rechte. Automatische
+          Updates sind eingebaut.
+        </p>
+
+        <div class="download-card">
+          <div class="download-card-left">
+            <p class="download-version">Version <span id="dl-version">…</span></p>
+            <p class="download-meta" id="dl-meta">Wird geladen…</p>
+            <ul class="download-features">
+              <li>🛡️ Lokale Pseudonymisierung — keine Cloud</li>
+              <li>📋 Audit-Log + CSV-Export für Compliance</li>
+              <li>🔄 Automatische Updates per GitHub-Release</li>
+              <li>👥 Multi-User pro Installation mit Admin-Rolle</li>
+              <li>🔌 MCP-Endpunkt für Codex und Claude Code</li>
+            </ul>
+          </div>
+          <div class="download-card-right">
+            <a class="button button-primary download-btn" id="dl-button"
+               href="https://github.com/MichiWerkmann/mom-shield/releases/latest"
+               rel="noopener">⬇ Installer herunterladen</a>
+            <p class="download-system">Windows 10 / 11 · 64-bit · ~32 MB</p>
+            <p class="download-note">
+              Lizenz nach Erwerb per E-Mail. <a href="support.html">Pilot-Anfrage</a>
+            </p>
+          </div>
+        </div>
+
+        <details class="download-extras">
+          <summary>Andere Optionen</summary>
+          <ul>
+            <li><a href="https://chrome.google.com/webstore" rel="noopener">Chrome-Erweiterung</a> — schneller Einstieg im Browser, kostenlos</li>
+            <li><a href="https://github.com/MichiWerkmann/mom-shield/releases" rel="noopener">Alle Versionen + Release-Notes</a> auf GitHub</li>
+            <li>SHA-256-Prüfsumme für deinen Build: <code id="dl-sha">…</code></li>
+          </ul>
+        </details>
+
+        <script>
+          // Resolve the actual asset URL from the latest.json manifest. Falls
+          // back to the GitHub "releases/latest" landing page if the manifest
+          // is unreachable (corporate proxy, etc.).
+          (async function () {
+            try {
+              const r = await fetch("https://raw.githubusercontent.com/MichiWerkmann/mom-shield/main/latest.json", { cache: "no-store" });
+              if (!r.ok) return;
+              const m = await r.json();
+              if (m.download_url) {
+                document.getElementById("dl-button").href = m.download_url;
+              }
+              if (m.version) {
+                document.getElementById("dl-version").textContent = "v" + m.version;
+                document.title = "MOM Shield " + m.version + " — Catch Sensitive Data Before AI Sees It";
+              }
+              if (m.released_at) {
+                const d = new Date(m.released_at);
+                document.getElementById("dl-meta").textContent =
+                  "Veröffentlicht am " + d.toLocaleDateString("de-DE", { year: "numeric", month: "long", day: "numeric" });
+              }
+              if (m.sha256) {
+                document.getElementById("dl-sha").textContent = m.sha256;
+              }
+            } catch { /* keep fallback link */ }
+          })();
+        </script>
       </div>
     </section>
 
