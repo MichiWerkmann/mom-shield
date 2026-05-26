@@ -1,28 +1,33 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MOM Shield — Sichere KI-Nutzung für sensible Daten</title>
-  <meta name="description" content="MOM Shield maskiert personenbezogene Daten, Mandanteninformationen und Geschäftsgeheimnisse lokal in Ihrem Browser, bevor sie an ChatGPT, Claude oder Copilot gesendet werden. Für Kanzleien, Steuerberater, HR und den datensensiblen Mittelstand.">
-  <meta name="keywords" content="KI Datenschutz, ChatGPT DSGVO, Mandantengeheimnis, Pseudonymisierung, KI für Kanzleien, Privacy Layer">
+  <title data-i18n="index.title">MOM Shield — Safe AI use for sensitive data</title>
+  <meta name="description" data-i18n-attr="content:index.desc" content="MOM Shield masks personal data, client information, and business secrets locally in your browser before they are sent to ChatGPT, Claude, or Copilot. Built for law firms, tax advisors, HR, and the privacy-sensitive mid-market.">
+  <meta name="keywords" content="AI privacy, ChatGPT GDPR, client confidentiality, pseudonymization, AI for law firms, privacy layer">
   <link rel="icon" href="assets/icon48.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Hauptnavigation">
+    <nav class="nav" data-i18n-attr="aria-label:nav.aria" aria-label="Main navigation">
       <a class="brand" href="index.html">
-        <img src="assets/icon48.png" alt="MOM Shield Icon">
+        <img src="assets/icon48.png" data-i18n-attr="alt:brand.alt" alt="MOM Shield icon">
         <span class="brand-wordmark"><span class="brand-mom">MOM</span> <span class="brand-shield">Shield</span></span>
       </a>
       <div class="nav-links">
-        <a href="#problem">Problem</a>
-        <a href="#zielgruppen">Für wen</a>
-        <a href="#workflow">So funktioniert's</a>
-        <a href="#produkte">Produkte</a>
-        <a href="#compliance">Datenschutz</a>
-        <a href="#download" class="nav-cta">Download</a>
+        <a href="#problem" data-i18n="nav.problem">Problem</a>
+        <a href="#zielgruppen" data-i18n="nav.audience">For whom</a>
+        <a href="#workflow" data-i18n="nav.workflow">How it works</a>
+        <a href="#produkte" data-i18n="nav.products">Products</a>
+        <a href="#compliance" data-i18n="nav.compliance">Privacy</a>
+        <a href="#download" class="nav-cta" data-i18n="nav.cta">Download</a>
+        <span class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Choose language">
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="false">DE</button>
+        </span>
       </div>
     </nav>
   </header>
@@ -33,73 +38,72 @@
       <div class="shell hero-shell">
         <div class="hero-head">
           <div class="hero-copy-block">
-            <p class="hero-kicker">Privacy Layer für sichere KI-Nutzung</p>
-            <h1>Endlich KI nutzen — ohne sensible Daten preiszugeben.</h1>
-            <p class="hero-copy">
-              MOM Shield erkennt personenbezogene Daten, Mandanteninformationen
-              und Geschäftsgeheimnisse automatisch und ersetzt sie durch sichere
-              Platzhalter — <strong>bevor</strong> sie an ChatGPT, Claude,
-              Copilot oder andere KI-Tools gesendet werden. Die Originaldaten
-              bleiben ausschließlich auf Ihrem Gerät.
+            <p class="hero-kicker" data-i18n="hero.kicker">Privacy layer for safe AI use</p>
+            <h1 data-i18n="hero.h1">Finally use AI — without exposing sensitive data.</h1>
+            <p class="hero-copy" data-i18n="hero.copy">
+              MOM Shield automatically detects personal data, client information,
+              and business secrets and replaces them with safe placeholders —
+              <strong>before</strong> they are sent to ChatGPT, Claude, Copilot,
+              or other AI tools. The original data stays exclusively on your device.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#download">Jetzt herunterladen</a>
-              <a class="button button-secondary" href="#workflow">So funktioniert's</a>
+              <a class="button button-primary" href="#download" data-i18n="hero.btn.dl">Download now</a>
+              <a class="button button-secondary" href="#workflow" data-i18n="hero.btn.how">How it works</a>
             </div>
 
-            <div class="hero-pills" aria-label="Vertrauenssignale">
-              <span class="pill">🇩🇪 DSGVO-konform</span>
-              <span class="pill">🔒 100 % lokal</span>
-              <span class="pill">📋 Audit-Log</span>
-              <span class="pill">🌐 ChatGPT · Claude · Copilot · Gemini</span>
+            <div class="hero-pills" data-i18n-attr="aria-label:hero.pills.aria" aria-label="Trust signals">
+              <span class="pill" data-i18n="hero.pill.1">🇪🇺 GDPR-compliant</span>
+              <span class="pill" data-i18n="hero.pill.2">🔒 100% local</span>
+              <span class="pill" data-i18n="hero.pill.3">📋 Audit log</span>
+              <span class="pill" data-i18n="hero.pill.4">🌐 ChatGPT · Claude · Copilot · Gemini</span>
             </div>
           </div>
 
-          <aside class="hero-brand-stack" aria-label="MOM Shield Logo">
+          <aside class="hero-brand-stack" data-i18n-attr="aria-label:hero.brand.aria" aria-label="MOM Shield logo">
             <div class="brand-showcase">
-              <img src="assets/logo.png" alt="MOM Shield Logo">
+              <img src="assets/logo.png" alt="MOM Shield logo">
             </div>
           </aside>
         </div>
 
-        <div class="hero-scene" aria-label="Maskierung vorher und nachher">
+        <div class="hero-scene" data-i18n-attr="aria-label:hero.scene.aria" aria-label="Masking before and after">
           <div class="scene-panel">
-            <p class="scene-label">Was Sie schreiben</p>
-            <p class="scene-title">Realer Mandanten­name im Prompt.</p>
+            <p class="scene-label" data-i18n="hero.scene.left.label">What you type</p>
+            <p class="scene-title" data-i18n="hero.scene.left.title">A real client name in the prompt.</p>
             <div class="code-window">
-              <span>Mandantin: Sarah Thompson</span>
-              <span>E-Mail: sarah.thompson@example.com</span>
-              <span>Telefon: +49 89 1234 5678</span>
+              <span>Client: Sarah Thompson</span>
+              <span>Email: sarah.thompson@example.com</span>
+              <span>Phone: +49 89 1234 5678</span>
               <span>IBAN: DE82 3704 0044 0532 0130 00</span>
             </div>
           </div>
 
           <div class="scene-core">
             <div class="core-badge">
-              <img src="assets/icon48.png" alt="MOM Shield Badge">
+              <img src="assets/icon48.png" alt="MOM Shield badge">
             </div>
-            <p class="scene-label">MOM Shield greift</p>
-            <h2>Lokal. Sofort. Unsichtbar.</h2>
-            <p class="core-copy">
-              Sensible Werte werden im Bruchteil einer Sekunde durch sprechende
-              Platzhalter ersetzt — und im Hintergrund persistent gemerkt, damit
-              die Antwort wieder lesbar wird.
+            <p class="scene-label" data-i18n="hero.scene.core.label">MOM Shield steps in</p>
+            <h2 data-i18n="hero.scene.core.h2">Local. Instant. Invisible.</h2>
+            <p class="core-copy" data-i18n="hero.scene.core.copy">
+              Sensitive values are replaced with meaningful placeholders in a
+              fraction of a second — and remembered persistently in the background,
+              so the answer becomes readable again.
             </p>
             <div class="core-points">
-              <span>Erkennt 17 PII-Typen automatisch</span>
-              <span>Eigene Regeln pro Kunde / Mandanten</span>
-              <span>Antworten werden lokal entmaskiert</span>
+              <span data-i18n="hero.scene.core.p1">Detects 17 PII types automatically</span>
+              <span data-i18n="hero.scene.core.p2">Custom rules per customer / client</span>
+              <span data-i18n="hero.scene.core.p3">Responses are unmasked locally</span>
             </div>
           </div>
 
           <div class="scene-panel">
-            <p class="scene-label">Was die KI sieht</p>
-            <p class="scene-title">Nur strukturierte Platzhalter.</p>
+            <p class="scene-label" data-i18n="hero.scene.right.label">What the AI sees</p>
+            <p class="scene-title" data-i18n="hero.scene.right.title">Only structured placeholders.</p>
             <div class="code-window code-window-masked">
-              <span>Mandantin: [[PERSON_001]]</span>
-              <span>E-Mail: [[EMAIL_001]]</span>
-              <span>Telefon: [[PHONE_001]]</span>
+              <span>Client: [[PERSON_001]]</span>
+              <span>Email: [[EMAIL_001]]</span>
+              <span>Phone: [[PHONE_001]]</span>
               <span>IBAN: [[IBAN_001]]</span>
             </div>
           </div>
@@ -110,121 +114,120 @@
     <!-- ═══════════════ PROBLEM ═══════════════ -->
     <section class="section section-dark" id="problem">
       <div class="shell">
-        <p class="section-kicker">Das Problem</p>
-        <h2>Sie kennen diesen Moment — den, der gar nicht passieren darf.</h2>
+        <p class="section-kicker" data-i18n="problem.kicker">The problem</p>
+        <h2 data-i18n="problem.h2">You know that moment — the one that should never happen.</h2>
 
         <div class="pain-grid">
           <article class="pain-card">
             <div class="pain-icon">⚠️</div>
-            <h3>Der schnelle Copy-Paste</h3>
-            <p>
-              Eine Mandanten-E-Mail in ChatGPT geworfen, um eine
-              Zusammenfassung zu bekommen. Erst nach dem Senden fällt auf:
-              Name, Anschrift und Aktenzeichen waren noch drin.
+            <h3 data-i18n="problem.card1.h3">The quick copy-paste</h3>
+            <p data-i18n="problem.card1.p">
+              A client email tossed into ChatGPT for a quick summary. Only after
+              hitting send do you notice: the name, address, and case number
+              were still in there.
             </p>
           </article>
 
           <article class="pain-card">
             <div class="pain-icon">📤</div>
-            <h3>Der Upload mit Hintergedanken</h3>
-            <p>
-              Ein Bewerberprofil als PDF in Copilot — schnell, weil's eilig
-              war. Die Compliance-Frage stellt sich danach. Die DSGVO-Anzeige
-              entdeckt es Wochen später.
+            <h3 data-i18n="problem.card2.h3">The upload with second thoughts</h3>
+            <p data-i18n="problem.card2.p">
+              A candidate profile as a PDF in Copilot — fast, because it was
+              urgent. The compliance question comes afterward. The GDPR report
+              catches it weeks later.
             </p>
           </article>
 
           <article class="pain-card">
             <div class="pain-icon">🚫</div>
-            <h3>Der Verzicht aus Vorsicht</h3>
-            <p>
-              Ihre Kollegen sehen, was die Konkurrenz mit KI alles schneller
-              macht. Sie selbst verzichten — weil Sie keinen Workflow haben,
-              der sensible Daten zuverlässig draußen hält.
+            <h3 data-i18n="problem.card3.h3">Opting out of caution</h3>
+            <p data-i18n="problem.card3.p">
+              Your colleagues see how competitors move faster with AI. You hold
+              back — because you don't have a workflow that reliably keeps
+              sensitive data out.
             </p>
           </article>
         </div>
 
         <div class="problem-bridge">
-          <p>
-            Jede dieser Situationen hat einen gemeinsamen Punkt: einen
-            <strong>Moment vor dem Klick</strong>, in dem etwas hätte
-            verhindert werden müssen. Genau dort setzt MOM Shield an.
+          <p data-i18n="problem.bridge">
+            Each of these situations shares one thing: a
+            <strong>moment before the click</strong> where something should have
+            been prevented. That's exactly where MOM Shield comes in.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════ ZIELGRUPPEN ═══════════════ -->
+    <!-- ═══════════════ AUDIENCE ═══════════════ -->
     <section class="section section-light" id="zielgruppen">
       <div class="shell">
-        <p class="section-kicker">Für wen MOM Shield gemacht ist</p>
-        <h2>Für Berufe, in denen Daten zur Verantwortung gehören.</h2>
-        <p class="lead">
-          MOM Shield wird im DACH-Raum entwickelt für Branchen, in denen
-          Geheimhaltung nicht optional ist. Wenn Sie sich mindestens in einer
-          dieser Rollen wiederfinden, ist die App für Sie gebaut.
+        <p class="section-kicker" data-i18n="audience.kicker">Who MOM Shield is built for</p>
+        <h2 data-i18n="audience.h2">For professions where data comes with responsibility.</h2>
+        <p class="lead" data-i18n="audience.lead">
+          MOM Shield is developed in the DACH region for industries where
+          confidentiality is not optional. If you recognize yourself in at
+          least one of these roles, the app was built for you.
         </p>
 
         <div class="audience-grid">
           <article class="audience-card">
             <div class="audience-icon">⚖️</div>
-            <h3>Kanzleien &amp; Rechtsanwälte</h3>
-            <p>
-              Mandantengeheimnis nach §&nbsp;43a BRAO. Schriftsätze, Verträge
-              und Korrespondenz dürfen keine identifizierbaren Daten an externe
-              KI-Dienste leaken — selbst nicht bei einer schnellen
-              Formulierungshilfe.
+            <h3 data-i18n="audience.card1.h3">Law firms &amp; attorneys</h3>
+            <p data-i18n="audience.card1.p">
+              Attorney–client privilege under §&nbsp;43a BRAO. Briefs, contracts,
+              and correspondence must not leak identifiable data to external
+              AI services — not even for a quick wording suggestion.
             </p>
           </article>
 
           <article class="audience-card">
             <div class="audience-icon">📊</div>
-            <h3>Steuerberater &amp; Wirtschaftsprüfer</h3>
-            <p>
-              Mandantendaten, Bilanzen, Steuerakten. KI-Unterstützung beim
-              Erklären und Strukturieren — ohne Klarnamen, IBANs und
-              Steuer-IDs durchsickern zu lassen.
+            <h3 data-i18n="audience.card2.h3">Tax advisors &amp; auditors</h3>
+            <p data-i18n="audience.card2.p">
+              Client data, balance sheets, tax files. AI assistance for
+              explaining and structuring — without letting real names, IBANs,
+              and tax IDs leak through.
             </p>
           </article>
 
           <article class="audience-card">
             <div class="audience-icon">👥</div>
-            <h3>HR &amp; Recruiting</h3>
-            <p>
-              Bewerberprofile, Personalakten, Lohndaten. KI hilft beim
-              Sichten, Bewerten und Antworten-Schreiben — ohne dass Lebensläufe
-              im Klartext bei OpenAI landen.
+            <h3 data-i18n="audience.card3.h3">HR &amp; recruiting</h3>
+            <p data-i18n="audience.card3.p">
+              Candidate profiles, personnel files, payroll data. AI helps
+              with screening, evaluating, and writing replies — without CVs
+              landing in plaintext at OpenAI.
             </p>
           </article>
 
           <article class="audience-card">
             <div class="audience-icon">🏥</div>
-            <h3>Versicherungen &amp; Schadensregulierung</h3>
-            <p>
-              Schadensakten, Gesundheitsdaten, Vertragsnummern. Komplexe Fälle
-              mit KI strukturieren, ohne in den Sondertatbestand nach Art.&nbsp;9
-              DSGVO zu rutschen.
+            <h3 data-i18n="audience.card4.h3">Insurance &amp; claims handling</h3>
+            <p data-i18n="audience.card4.p">
+              Claim files, health data, contract numbers. Structure complex
+              cases with AI without slipping into the special category under
+              Art.&nbsp;9 GDPR.
             </p>
           </article>
 
           <article class="audience-card">
             <div class="audience-icon">📑</div>
-            <h3>Vertrieb &amp; Angebote</h3>
-            <p>
-              Kundendokumente, Preise, Konditionen, Strategiepapiere.
-              KI-gestützte Angebotsformulierung, ohne dass die Wettbewerber
-              jemals an die Originale kommen.
+            <h3 data-i18n="audience.card5.h3">Sales &amp; proposals</h3>
+            <p data-i18n="audience.card5.p">
+              Customer documents, prices, terms, strategy papers. AI-assisted
+              proposal drafting — without competitors ever getting near the
+              originals.
             </p>
           </article>
 
           <article class="audience-card">
             <div class="audience-icon">🏢</div>
-            <h3>Datenschutzfokussierter Mittelstand</h3>
-            <p>
-              Mitarbeiter wollen KI nutzen, der DSB sagt nein, die
-              Geschäftsleitung will Produktivität. MOM Shield ist die
-              technische Antwort, mit der alle drei zufrieden sind.
+            <h3 data-i18n="audience.card6.h3">Privacy-focused SMBs</h3>
+            <p data-i18n="audience.card6.p">
+              Employees want to use AI, the DPO says no, leadership wants
+              productivity. MOM Shield is the technical answer that satisfies
+              all three.
             </p>
           </article>
         </div>
@@ -234,110 +237,107 @@
     <!-- ═══════════════ WORKFLOW ═══════════════ -->
     <section class="section section-neutral" id="workflow">
       <div class="shell">
-        <p class="section-kicker">So funktioniert's</p>
-        <h2>Vier Schritte. Kein zusätzlicher Aufwand.</h2>
-        <p class="lead">
-          Sie ändern nichts an Ihrem Arbeiten — MOM Shield greift im
-          Hintergrund. Vom Tippen bis zur fertigen KI-Antwort bleibt alles
-          natürlich.
+        <p class="section-kicker" data-i18n="workflow.kicker">How it works</p>
+        <h2 data-i18n="workflow.h2">Four steps. No extra effort.</h2>
+        <p class="lead" data-i18n="workflow.lead">
+          You don't change how you work — MOM Shield steps in in the background.
+          From typing to the final AI response, everything feels natural.
         </p>
 
         <div class="workflow-grid workflow-grid-large">
           <article class="workflow-step">
             <p class="workflow-number">01</p>
-            <h3>Sie tippen oder fügen ein</h3>
-            <p>
-              Wie gewohnt — E-Mail, Vertrag, Bewerberprofil, Tabellen-Auszug.
-              Egal ob als Text in den Chat oder als Datei-Upload.
+            <h3 data-i18n="workflow.step1.h3">You type or paste</h3>
+            <p data-i18n="workflow.step1.p">
+              As usual — email, contract, candidate profile, spreadsheet excerpt.
+              Whether as chat text or a file upload.
             </p>
           </article>
           <article class="workflow-step">
             <p class="workflow-number">02</p>
-            <h3>MOM Shield erkennt &amp; maskiert</h3>
-            <p>
-              Personen, Adressen, IBANs, Telefonnummern, IDs, Geheimnisse —
-              automatisch erkannt und durch sprechende Platzhalter ersetzt.
-              Eigene Regeln pro Kunde / Mandanten ergänzbar.
+            <h3 data-i18n="workflow.step2.h3">MOM Shield detects &amp; masks</h3>
+            <p data-i18n="workflow.step2.p">
+              People, addresses, IBANs, phone numbers, IDs, secrets —
+              automatically detected and replaced with meaningful placeholders.
+              Custom rules per customer/client can be added.
             </p>
           </article>
           <article class="workflow-step">
             <p class="workflow-number">03</p>
-            <h3>KI sieht nur Platzhalter</h3>
-            <p>
-              ChatGPT, Claude, Copilot, Gemini bekommen
-              <code>[[PERSON_001]]</code> statt „Max Mustermann". Die KI kann
-              trotzdem strukturiert antworten — sie weiß nur nichts.
+            <h3 data-i18n="workflow.step3.h3">The AI sees only placeholders</h3>
+            <p data-i18n="workflow.step3.p">
+              ChatGPT, Claude, Copilot, Gemini receive
+              <code>[[PERSON_001]]</code> instead of "Max Mustermann". The AI
+              can still respond in a structured way — it simply knows nothing.
             </p>
           </article>
           <article class="workflow-step">
             <p class="workflow-number">04</p>
-            <h3>Antwort wird lokal aufgelöst</h3>
-            <p>
-              Die Antwort enthält die gleichen Platzhalter — MOM Shield
-              ersetzt sie auf Ihrem Gerät wieder durch die Originalwerte.
-              Lesbar für Sie, unbekannt für die KI.
+            <h3 data-i18n="workflow.step4.h3">The response is resolved locally</h3>
+            <p data-i18n="workflow.step4.p">
+              The response contains the same placeholders — MOM Shield replaces
+              them on your device with the original values again. Readable for
+              you, unknown to the AI.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════ ZWEI PRODUKTE ═══════════════ -->
+    <!-- ═══════════════ TWO PRODUCTS ═══════════════ -->
     <section class="section section-dark" id="produkte">
       <div class="shell">
-        <p class="section-kicker">Zwei Produkte unter einer Marke</p>
-        <h2>Browser-Erweiterung für den Alltag. Desktop-App für sensible Dokumente.</h2>
-        <p class="lead">
-          Beide nutzen dieselbe Maskierungs-Engine, denselben Token-Standard
-          und dieselben Sicherheitsmechanismen. Sie können beide parallel
-          einsetzen — oder nur das, was Sie brauchen.
+        <p class="section-kicker" data-i18n="products.kicker">Two products under one brand</p>
+        <h2 data-i18n="products.h2">Browser extension for daily use. Desktop app for sensitive documents.</h2>
+        <p class="lead" data-i18n="products.lead">
+          Both use the same masking engine, the same token standard, and the
+          same security mechanisms. You can run them side by side — or just
+          use whichever you need.
         </p>
 
         <div class="products-grid">
           <article class="product-card product-card-browser">
-            <div class="product-badge">Browser</div>
-            <h3>MOM Shield für ChatGPT &amp; Co.</h3>
-            <p class="product-summary">
-              Erweiterung für Chromium-basierte Browser. Maskiert sofort beim
-              Schreiben in ChatGPT, Claude, Copilot, Gemini und ähnliche
-              Web-KI-Tools.
+            <div class="product-badge" data-i18n="products.browser.badge">Browser</div>
+            <h3 data-i18n="products.browser.h3">MOM Shield for ChatGPT &amp; Co.</h3>
+            <p class="product-summary" data-i18n="products.browser.summary">
+              Extension for Chromium-based browsers. Masks instantly while you
+              write in ChatGPT, Claude, Copilot, Gemini, and similar web AI tools.
             </p>
             <ul class="product-features">
-              <li>✅ Automatische Maskierung beim Senden</li>
-              <li>✅ Datei-Uploads werden vor dem Upload geschützt</li>
-              <li>✅ Antworten werden im Browser wieder entmaskiert</li>
-              <li>✅ Drei Schutzstufen (Strict / Standard / Quick)</li>
-              <li>✅ Kostenlos für den Alltagseinstieg</li>
+              <li data-i18n="products.browser.f1">✅ Automatic masking on submit</li>
+              <li data-i18n="products.browser.f2">✅ File uploads are protected before upload</li>
+              <li data-i18n="products.browser.f3">✅ Responses are unmasked again in the browser</li>
+              <li data-i18n="products.browser.f4">✅ Three protection levels (Strict / Standard / Quick)</li>
+              <li data-i18n="products.browser.f5">✅ Free for everyday use</li>
             </ul>
             <div class="product-meta">
-              <p><strong>Ideal für:</strong> Tägliche Prompt-Arbeit, spontane Anfragen, KI-Recherche</p>
-              <p><strong>Browser:</strong> Chrome, Edge, Brave, Opera</p>
+              <p data-i18n="products.browser.meta1"><strong>Ideal for:</strong> daily prompt work, ad-hoc requests, AI research</p>
+              <p data-i18n="products.browser.meta2"><strong>Browser:</strong> Chrome, Edge, Brave, Opera</p>
             </div>
-            <a class="button button-secondary" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener">In Chrome installieren</a>
+            <a class="button button-secondary" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener" data-i18n="products.browser.cta">Install in Chrome</a>
           </article>
 
           <article class="product-card product-card-desktop">
-            <div class="product-badge product-badge-pro">Desktop · Pro</div>
-            <h3>MOM Shield Desktop</h3>
-            <p class="product-summary">
-              Vollwertige Windows-App für strukturierte Dokumentenarbeit.
-              Mehrbenutzer, Audit-Log, Lizenz-Verwaltung, MCP-Anbindung für
-              Codex und Claude Code.
+            <div class="product-badge product-badge-pro" data-i18n="products.desktop.badge">Desktop · Pro</div>
+            <h3 data-i18n="products.desktop.h3">MOM Shield Desktop</h3>
+            <p class="product-summary" data-i18n="products.desktop.summary">
+              Full Windows app for structured document work. Multi-user, audit
+              log, license management, MCP integration for Codex and Claude Code.
             </p>
             <ul class="product-features">
-              <li>✅ PDF, DOCX, TXT, MD direkt verarbeiten</li>
-              <li>✅ Audit-Log mit CSV-Export für Compliance</li>
-              <li>✅ Bis zu 10 Mitarbeiter pro Installation</li>
-              <li>✅ Admin-Rollen &amp; Rechteverwaltung</li>
-              <li>✅ Strict-Modus: Pflicht-Review vor jedem Senden</li>
-              <li>✅ MCP-Server für Codex / Claude Code Integration</li>
-              <li>✅ Automatische Updates</li>
+              <li data-i18n="products.desktop.f1">✅ Process PDF, DOCX, TXT, MD directly</li>
+              <li data-i18n="products.desktop.f2">✅ Audit log with CSV export for compliance</li>
+              <li data-i18n="products.desktop.f3">✅ Up to 10 users per installation</li>
+              <li data-i18n="products.desktop.f4">✅ Admin roles &amp; permissions</li>
+              <li data-i18n="products.desktop.f5">✅ Strict mode: mandatory review before sending</li>
+              <li data-i18n="products.desktop.f6">✅ MCP server for Codex / Claude Code integration</li>
+              <li data-i18n="products.desktop.f7">✅ Automatic updates</li>
             </ul>
             <div class="product-meta">
-              <p><strong>Ideal für:</strong> Kanzleien, Steuerkanzleien, HR-Abteilungen, datensensible Teams</p>
-              <p><strong>System:</strong> Windows 10 / 11 · 64-bit</p>
+              <p data-i18n="products.desktop.meta1"><strong>Ideal for:</strong> law firms, tax practices, HR teams, privacy-sensitive teams</p>
+              <p data-i18n="products.desktop.meta2"><strong>System:</strong> Windows 10 / 11 · 64-bit</p>
             </div>
-            <a class="button button-primary" href="#download">Desktop-App herunterladen</a>
+            <a class="button button-primary" href="#download" data-i18n="products.desktop.cta">Download the desktop app</a>
           </article>
         </div>
       </div>
@@ -346,79 +346,74 @@
     <!-- ═══════════════ COMPLIANCE ═══════════════ -->
     <section class="section section-light" id="compliance">
       <div class="shell">
-        <p class="section-kicker">Datenschutz &amp; Compliance</p>
-        <h2>Verantwortlich entwickelt. Nachprüfbar dokumentiert.</h2>
-        <p class="lead">
-          MOM Shield ist nicht nur ein Marketing-Versprechen — die
-          Architektur ist so gebaut, dass „Daten bleiben lokal" technisch
-          nicht anders geht.
+        <p class="section-kicker" data-i18n="compliance.kicker">Privacy &amp; compliance</p>
+        <h2 data-i18n="compliance.h2">Built responsibly. Documented verifiably.</h2>
+        <p class="lead" data-i18n="compliance.lead">
+          MOM Shield is not just a marketing promise — the architecture is
+          built so that "data stays local" cannot work any other way technically.
         </p>
 
         <div class="compliance-grid">
           <article class="compliance-card">
-            <h3>🇩🇪 In Deutschland entwickelt</h3>
-            <p>
-              MOM Shield wird in Deutschland entwickelt. Keine
-              US-Konzern-Datenflüsse, kein versteckter Cloud-Sync, keine
-              Telemetrie an Dritte.
+            <h3 data-i18n="compliance.c1.h3">🇩🇪 Developed in Germany</h3>
+            <p data-i18n="compliance.c1.p">
+              MOM Shield is developed in Germany. No US-corporation data flows,
+              no hidden cloud sync, no third-party telemetry.
             </p>
           </article>
 
           <article class="compliance-card">
-            <h3>🔒 Daten verlassen das Gerät nicht</h3>
-            <p>
-              Die Maskierung passiert in Ihrem Browser bzw. Ihrer Desktop-App.
-              Originaldaten werden niemals an einen MOM-Shield-Server gesendet
-              — es gibt schlicht keinen.
+            <h3 data-i18n="compliance.c2.h3">🔒 Data does not leave the device</h3>
+            <p data-i18n="compliance.c2.p">
+              Masking happens in your browser or your desktop app. Original
+              data is never sent to a MOM Shield server — there simply isn't one.
             </p>
           </article>
 
           <article class="compliance-card">
-            <h3>📋 Audit-Log mit CSV-Export</h3>
-            <p>
-              Jede Maskierung, jede Entmaskierung, jeder Datei-Zugriff wird
-              mit Zeitstempel, Benutzer und verwendeter Regelversion in der
-              lokalen DB festgehalten. Auf Knopfdruck als CSV exportierbar
-              für Audit, DSB und Geschäftsleitung.
+            <h3 data-i18n="compliance.c3.h3">📋 Audit log with CSV export</h3>
+            <p data-i18n="compliance.c3.p">
+              Every masking, unmasking, and file access is recorded in the
+              local DB with timestamp, user, and rule version. Exportable as
+              CSV at the press of a button — for audits, DPOs, and management.
             </p>
           </article>
 
           <article class="compliance-card">
-            <h3>🔁 Pseudonymisierung, kein Marketing-Begriff</h3>
-            <p>
-              Wir sprechen bewusst von Pseudonymisierung statt Anonymisierung.
-              Die Original­werte sind wiederherstellbar — auf Ihrem Gerät, mit
-              Ihrem Token. Das entspricht der DSGVO-Definition und ist
-              fachlich korrekt.
+            <h3 data-i18n="compliance.c4.h3">🔁 Pseudonymization, not marketing speak</h3>
+            <p data-i18n="compliance.c4.p">
+              We deliberately speak of pseudonymization, not anonymization. The
+              original values are recoverable — on your device, with your token.
+              That matches the GDPR definition and is technically accurate.
             </p>
           </article>
 
           <article class="compliance-card">
-            <h3>🛡️ Lizenz mit Signatur</h3>
-            <p>
-              Jede gewerbliche Lizenz ist mit einem Ed25519-Schlüsselpaar
-              signiert. Manipulationssicher, nachweisbar, offline prüfbar.
-              Auch für ISMS-zertifizierte Umgebungen geeignet.
+            <h3 data-i18n="compliance.c5.h3">🛡️ Signed license</h3>
+            <p data-i18n="compliance.c5.p">
+              Every commercial license is signed with an Ed25519 key pair.
+              Tamper-resistant, verifiable, checkable offline. Suitable for
+              ISMS-certified environments.
             </p>
           </article>
 
           <article class="compliance-card">
-            <h3>👤 Rollenkonzept ab v1.2</h3>
-            <p>
-              Admin und Standard-Benutzer pro Installation getrennt.
-              Selbst-Registrierung optional deaktivierbar, Maximal-Nutzer-Limit
-              setzbar. Passwort-Reset durch den Admin auf eigenem Server.
+            <h3 data-i18n="compliance.c6.h3">👤 Role model from v1.2</h3>
+            <p data-i18n="compliance.c6.p">
+              Admin and standard user are separated per installation.
+              Self-registration can be disabled, a maximum user limit can be
+              set. Password reset by the admin on your own server.
             </p>
           </article>
         </div>
 
         <div class="compliance-bridge">
           <p>
-            <a href="privacy.html">→ Vollständige Datenschutzerklärung lesen</a>
+            <a href="privacy.html" data-i18n="compliance.bridge.priv">→ Read the full privacy policy</a>
             <span class="bridge-sep">·</span>
-            <a href="imprint.html">Impressum</a>
+            <a href="imprint.html" data-i18n="compliance.bridge.imp">Legal Notice</a>
             <span class="bridge-sep">·</span>
-            <a href="support.html">Datenschutz-Anfrage stellen</a>
+            <a href="support.html" data-i18n="compliance.bridge.req">Submit a privacy request</a>
           </p>
         </div>
       </div>
@@ -427,23 +422,23 @@
     <!-- ═══════════════ PROOF ═══════════════ -->
     <section class="section section-neutral" id="proof">
       <div class="shell">
-        <p class="section-kicker">Im Direktvergleich</p>
-        <h2>Auf einen Blick: vorher und nachher.</h2>
-        <p class="lead">
-          Links sehen Sie, was Sie geschrieben haben. Rechts sehen Sie, was
-          die KI tatsächlich bekommt.
+        <p class="section-kicker" data-i18n="proof.kicker">Side by side</p>
+        <h2 data-i18n="proof.h2">At a glance: before and after.</h2>
+        <p class="lead" data-i18n="proof.lead">
+          On the left you see what you wrote. On the right you see what the
+          AI actually receives.
         </p>
 
         <div class="comparison-grid">
           <figure class="media-block">
-            <div class="media-tag">Vor MOM Shield</div>
-            <img src="assets/before-masking.jpg" alt="Prompt vor MOM Shield Maskierung">
-            <figcaption>Originaler Prompt mit Mandantendaten im Editor.</figcaption>
+            <div class="media-tag" data-i18n="proof.before.tag">Before MOM Shield</div>
+            <img src="assets/before-masking.jpg" data-i18n-attr="alt:proof.before.alt" alt="Prompt before MOM Shield masking">
+            <figcaption data-i18n="proof.before.cap">Original prompt with client data in the editor.</figcaption>
           </figure>
           <figure class="media-block">
-            <div class="media-tag media-tag-accent">Nach MOM Shield</div>
-            <img src="assets/after-masking.jpg" alt="Prompt nach MOM Shield Maskierung">
-            <figcaption>Personen­bezogene Daten durch strukturierte Platzhalter ersetzt — bevor die KI etwas sieht.</figcaption>
+            <div class="media-tag media-tag-accent" data-i18n="proof.after.tag">After MOM Shield</div>
+            <img src="assets/after-masking.jpg" data-i18n-attr="alt:proof.after.alt" alt="Prompt after MOM Shield masking">
+            <figcaption data-i18n="proof.after.cap">Personal data replaced with structured placeholders — before the AI sees anything.</figcaption>
           </figure>
         </div>
       </div>
@@ -452,23 +447,23 @@
     <!-- ═══════════════ DEMO ═══════════════ -->
     <section class="section section-dark" id="demo">
       <div class="shell">
-        <p class="section-kicker">Demo</p>
-        <h2>Der komplette Ablauf — in unter 90 Sekunden.</h2>
-        <p class="lead">
-          Schauen Sie selbst, wie sich MOM Shield in den ChatGPT-Alltag
-          einbettet, ohne den Workflow zu unterbrechen.
+        <p class="section-kicker" data-i18n="demo.kicker">Demo</p>
+        <h2 data-i18n="demo.h2">The complete flow — in under 90 seconds.</h2>
+        <p class="lead" data-i18n="demo.lead">
+          See for yourself how MOM Shield fits into the ChatGPT routine
+          without interrupting the workflow.
         </p>
 
         <figure class="demo-frame">
           <video controls autoplay muted loop preload="metadata" playsinline>
             <source src="assets/demo-usecase.mp4" type="video/mp4">
-            Ihr Browser unterstützt das Demo-Video nicht.
+            <span data-i18n="demo.fallback">Your browser does not support the demo video.</span>
           </video>
-          <figcaption>Prompt-Schutz, Upload-Schutz und automatische Antwort-Entmaskierung in einem Workflow.</figcaption>
+          <figcaption data-i18n="demo.cap">Prompt protection, upload protection, and automatic response unmasking in one workflow.</figcaption>
         </figure>
 
         <div class="video-page-cta">
-          <a class="button button-secondary" href="video.html">Zur dedizierten Demo-Seite</a>
+          <a class="button button-secondary" href="video.html" data-i18n="demo.cta">Go to the dedicated demo page</a>
         </div>
       </div>
     </section>
@@ -476,45 +471,45 @@
     <!-- ═══════════════ DOWNLOAD ═══════════════ -->
     <section class="section section-dark download-section" id="download">
       <div class="shell">
-        <p class="section-kicker">Download</p>
-        <h2>MOM Shield für Windows</h2>
-        <p class="lead">
-          Direkter Installer für die Desktop-App. Installation pro Nutzer
-          unter <code>%LOCALAPPDATA%</code> — ohne Admin-Rechte, ohne
-          Cloud-Konto. Updates kommen automatisch.
+        <p class="section-kicker" data-i18n="download.kicker">Download</p>
+        <h2 data-i18n="download.h2">MOM Shield for Windows</h2>
+        <p class="lead" data-i18n="download.lead">
+          Direct installer for the desktop app. Per-user installation under
+          <code>%LOCALAPPDATA%</code> — no admin rights, no cloud account.
+          Updates arrive automatically.
         </p>
 
         <div class="download-card">
           <div class="download-card-left">
-            <p class="download-version">Version <span id="dl-version">…</span></p>
-            <p class="download-meta" id="dl-meta">Wird geladen…</p>
+            <p class="download-version"><span data-i18n="download.version">Version</span> <span id="dl-version">…</span></p>
+            <p class="download-meta" id="dl-meta" data-i18n="download.meta">Loading…</p>
             <ul class="download-features">
-              <li>🛡️ Lokale Pseudonymisierung — keine Cloud</li>
-              <li>📋 Audit-Log + CSV-Export für Compliance</li>
-              <li>🔄 Automatische Updates via signiertem Manifest</li>
-              <li>👥 Multi-User mit Admin-Rolle</li>
-              <li>🔌 MCP-Endpunkt für Codex und Claude Code</li>
+              <li data-i18n="download.f1">🛡️ Local pseudonymization — no cloud</li>
+              <li data-i18n="download.f2">📋 Audit log + CSV export for compliance</li>
+              <li data-i18n="download.f3">🔄 Automatic updates via signed manifest</li>
+              <li data-i18n="download.f4">👥 Multi-user with admin role</li>
+              <li data-i18n="download.f5">🔌 MCP endpoint for Codex and Claude Code</li>
             </ul>
           </div>
           <div class="download-card-right">
             <a class="button button-primary download-btn" id="dl-button"
                href="https://github.com/MichiWerkmann/mom-shield/releases/latest"
-               rel="noopener">⬇ Installer herunterladen</a>
-            <p class="download-system">Windows 10 / 11 · 64-bit · ~32 MB</p>
-            <p class="download-note">
-              Aktuell in <strong>Pilot-Phase</strong>. Lizenz für gewerbliche
-              Nutzung auf <a href="support.html">Anfrage</a>.
+               rel="noopener" data-i18n="download.btn">⬇ Download installer</a>
+            <p class="download-system" data-i18n="download.system">Windows 10 / 11 · 64-bit · ~32 MB</p>
+            <p class="download-note" data-i18n="download.note">
+              Currently in <strong>pilot phase</strong>. Commercial licenses
+              <a href="support.html">on request</a>.
             </p>
           </div>
         </div>
 
         <details class="download-extras">
-          <summary>Weitere Optionen &amp; technische Details</summary>
+          <summary data-i18n="download.extras.summary">More options &amp; technical details</summary>
           <ul>
-            <li><a href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener">Chrome-Erweiterung</a> — kostenloser Einstieg für ChatGPT &amp; Co.</li>
-            <li><a href="https://github.com/MichiWerkmann/mom-shield/releases" rel="noopener">Alle Versionen + Release-Notes</a> auf GitHub</li>
-            <li>SHA-256-Prüfsumme: <code id="dl-sha">…</code></li>
-            <li>System-Voraussetzung: Windows 10 (1809+) oder Windows 11, WebView2-Runtime (auf Win11 vorinstalliert)</li>
+            <li data-i18n="download.extras.li1"><a href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener">Chrome extension</a> — free entry point for ChatGPT &amp; Co.</li>
+            <li data-i18n="download.extras.li2"><a href="https://github.com/MichiWerkmann/mom-shield/releases" rel="noopener">All versions + release notes</a> on GitHub</li>
+            <li data-i18n="download.extras.li3">SHA-256 checksum: <code id="dl-sha">…</code></li>
+            <li data-i18n="download.extras.li4">System requirement: Windows 10 (1809+) or Windows 11, WebView2 runtime (preinstalled on Win11)</li>
           </ul>
         </details>
 
@@ -527,12 +522,20 @@
               if (m.download_url) document.getElementById("dl-button").href = m.download_url;
               if (m.version) {
                 document.getElementById("dl-version").textContent = "v" + m.version;
-                document.title = "MOM Shield " + m.version + " — Sichere KI-Nutzung für sensible Daten";
+                const lang = (window.MomShieldI18n && window.MomShieldI18n.getLang && window.MomShieldI18n.getLang()) || "en";
+                const titles = {
+                  en: "MOM Shield " + m.version + " — Safe AI use for sensitive data",
+                  de: "MOM Shield " + m.version + " — Sichere KI-Nutzung für sensible Daten"
+                };
+                document.title = titles[lang] || titles.en;
               }
               if (m.released_at) {
+                const lang = (window.MomShieldI18n && window.MomShieldI18n.getLang && window.MomShieldI18n.getLang()) || "en";
                 const d = new Date(m.released_at);
+                const locale = lang === "de" ? "de-DE" : "en-US";
+                const label = lang === "de" ? "Veröffentlicht am " : "Released on ";
                 document.getElementById("dl-meta").textContent =
-                  "Veröffentlicht am " + d.toLocaleDateString("de-DE", { year: "numeric", month: "long", day: "numeric" });
+                  label + d.toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
               }
               if (m.sha256) document.getElementById("dl-sha").textContent = m.sha256;
             } catch { /* keep fallback */ }
@@ -544,98 +547,92 @@
     <!-- ═══════════════ FAQ ═══════════════ -->
     <section class="section section-light" id="faq">
       <div class="shell">
-        <p class="section-kicker">Häufige Fragen</p>
-        <h2>Was Sie sich vermutlich gerade fragen.</h2>
+        <p class="section-kicker" data-i18n="faq.kicker">Frequently asked questions</p>
+        <h2 data-i18n="faq.h2">What you're probably asking right now.</h2>
 
         <div class="faq-grid">
           <details class="faq-item">
-            <summary>Werden meine Daten an MOM Shield gesendet?</summary>
-            <p>
-              <strong>Nein.</strong> Es existiert kein zentraler
-              MOM-Shield-Server, der Ihre Daten empfangen könnte. Die
-              Maskierung läuft komplett auf Ihrem Gerät — im Browser bzw. in
-              der Desktop-App. Selbst Updates und Lizenz-Prüfungen erfolgen
-              offline; nur das Updater-Manifest und Installer-Downloads
-              kommen aus dem öffentlichen GitHub-Repository.
+            <summary data-i18n="faq.q1">Is my data sent to MOM Shield?</summary>
+            <p data-i18n="faq.a1">
+              <strong>No.</strong> There is no central MOM Shield server that
+              could receive your data. Masking runs entirely on your device — in
+              the browser or the desktop app. Even updates and license checks
+              happen offline; only the updater manifest and installer downloads
+              come from the public GitHub repository.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Was sieht die KI dann eigentlich?</summary>
-            <p>
-              Strukturierte Platzhalter wie <code>[[PERSON_001]]</code>,
-              <code>[[IBAN_001]]</code> oder <code>[[ACCOUNT_001]]</code>. Die
-              KI versteht die Grammatik und kann mit den Platzhaltern
-              arbeiten — sie weiß nur nicht, wer dahintersteckt. Wenn die
-              Antwort die gleichen Platzhalter zurückliefert, ersetzt MOM
-              Shield sie auf Ihrem Gerät wieder durch die Originalwerte.
+            <summary data-i18n="faq.q2">What does the AI actually see?</summary>
+            <p data-i18n="faq.a2">
+              Structured placeholders like <code>[[PERSON_001]]</code>,
+              <code>[[IBAN_001]]</code>, or <code>[[ACCOUNT_001]]</code>. The
+              AI understands the grammar and can work with the placeholders —
+              it just doesn't know who's behind them. When the response
+              contains the same placeholders, MOM Shield replaces them on your
+              device with the original values.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Ist das DSGVO-konform?</summary>
-            <p>
-              MOM Shield ist ein <strong>Pseudonymisierungs-Werkzeug</strong>
-              im Sinne von Art.&nbsp;4 Nr.&nbsp;5 DSGVO. Die Auftragsverarbeitung
-              durch den KI-Anbieter findet ausschließlich mit
-              pseudonymisierten Daten statt — das reduziert das Risiko
-              gegenüber unverschlüsseltem Versand erheblich. Eine
-              vollständige rechtliche Bewertung muss aber Ihr DSB im Kontext
-              Ihrer konkreten Verarbeitung treffen.
+            <summary data-i18n="faq.q3">Is this GDPR-compliant?</summary>
+            <p data-i18n="faq.a3">
+              MOM Shield is a <strong>pseudonymization tool</strong> within the
+              meaning of Art.&nbsp;4(5) GDPR. Processing by the AI provider
+              happens exclusively with pseudonymized data — that significantly
+              reduces the risk compared to unencrypted transmission. A full
+              legal assessment must still be made by your DPO in the context
+              of your specific processing.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Wieviele Mitarbeiter können die Desktop-App nutzen?</summary>
-            <p>
-              Pro Installation bis zu 10 Mitarbeiter, alle mit eigenen
-              Accounts. Ein Admin pro Installation. Größere Setups
-              (mehrere Standorte, zentrale Richtlinien) sind in Planung —
-              sprechen Sie uns für ein Pilot-Setup an.
+            <summary data-i18n="faq.q4">How many employees can use the desktop app?</summary>
+            <p data-i18n="faq.a4">
+              Up to 10 users per installation, each with their own account.
+              One admin per installation. Larger setups (multiple locations,
+              central policies) are on the roadmap — talk to us for a pilot.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Was kostet MOM Shield?</summary>
-            <p>
-              Die Chrome-Erweiterung ist kostenlos. Die Desktop-App ist
-              aktuell in der <strong>Pilot-Phase</strong> — Lizenzen werden
-              individuell ausgestellt und sind im Pilot-Zeitraum vergünstigt
-              oder kostenfrei, je nach Vereinbarung. Reguläre Tarife folgen
-              mit dem allgemeinen Marktstart.
+            <summary data-i18n="faq.q5">What does MOM Shield cost?</summary>
+            <p data-i18n="faq.a5">
+              The Chrome extension is free. The desktop app is currently in
+              <strong>pilot phase</strong> — licenses are issued individually
+              and are discounted or free during the pilot, depending on
+              agreement. Regular pricing follows with general market launch.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Funktioniert das auch mit Microsoft Copilot oder lokalen Modellen?</summary>
-            <p>
-              Die Chrome-Erweiterung deckt aktuell ChatGPT, Claude, Copilot
-              (Microsoft), Gemini und Grok ab. Die Desktop-App ist
-              KI-agnostisch — Sie maskieren lokal, fügen den maskierten Text
-              dort ein, wo Sie wollen. Lokale Modelle (Ollama, LM Studio)
-              funktionieren genauso.
+            <summary data-i18n="faq.q6">Does this also work with Microsoft Copilot or local models?</summary>
+            <p data-i18n="faq.a6">
+              The Chrome extension currently covers ChatGPT, Claude, Copilot
+              (Microsoft), Gemini, and Grok. The desktop app is AI-agnostic —
+              you mask locally and paste the masked text wherever you want.
+              Local models (Ollama, LM Studio) work the same way.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Wie sicher ist die Lizenz-Datei?</summary>
-            <p>
-              Jede Lizenz ist mit einem Ed25519-Schlüsselpaar signiert. Eine
-              Manipulation der enthaltenen Daten (Ablauf, Sitze, Plan) wird
-              von der App sofort erkannt und abgelehnt. Der öffentliche
-              Schlüssel ist in jeder App-Version eingebaut; der private
-              Schlüssel verbleibt ausschließlich bei uns.
+            <summary data-i18n="faq.q7">How secure is the license file?</summary>
+            <p data-i18n="faq.a7">
+              Every license is signed with an Ed25519 key pair. Any tampering
+              with the contained data (expiry, seats, plan) is immediately
+              detected and rejected by the app. The public key is built into
+              every app version; the private key stays exclusively with us.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>Kann ich MOM Shield in einer streng regulierten Umgebung einsetzen?</summary>
-            <p>
-              Für ISMS-zertifizierte oder regulierte Umgebungen (z.&nbsp;B.
-              Versicherungen mit Aufsicht, Krankenhäuser, Behörden) sprechen
-              Sie uns für ein <em>Enterprise-Setup</em> an: On-Premises-Variante,
-              eigenes Regelset, signierte Builds. Das ist Teil unserer
-              Roadmap und wird mit ersten Großkunden gemeinsam ausgebaut.
+            <summary data-i18n="faq.q8">Can I deploy MOM Shield in a strictly regulated environment?</summary>
+            <p data-i18n="faq.a8">
+              For ISMS-certified or regulated environments (e.g., supervised
+              insurers, hospitals, public authorities) talk to us about an
+              <em>enterprise setup</em>: on-premises variant, custom rule set,
+              signed builds. It's part of our roadmap and is being built out
+              together with first enterprise customers.
             </p>
           </details>
         </div>
@@ -646,17 +643,16 @@
     <section class="section section-neutral closing-cta">
       <div class="shell">
         <div class="notice notice-strong">
-          <p class="notice-kicker">Bereit für sichere KI-Nutzung?</p>
-          <h2>Drei Wege, MOM Shield kennenzulernen.</h2>
-          <p>
-            Probieren Sie die Chrome-Erweiterung kostenlos. Laden Sie die
-            Desktop-App herunter und nutzen Sie sie im Pilot-Modus. Oder
-            sprechen Sie uns für ein individuelles Setup an.
+          <p class="notice-kicker" data-i18n="cta.kicker">Ready for safe AI use?</p>
+          <h2 data-i18n="cta.h2">Three ways to get to know MOM Shield.</h2>
+          <p data-i18n="cta.copy">
+            Try the Chrome extension for free. Download the desktop app and
+            use it in pilot mode. Or talk to us about an individual setup.
           </p>
           <div class="closing-actions">
-            <a class="button button-primary" href="#download">Desktop-App laden</a>
-            <a class="button button-secondary" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener">Chrome-Erweiterung</a>
-            <a class="button button-secondary" href="support.html">Pilot-Anfrage stellen</a>
+            <a class="button button-primary" href="#download" data-i18n="cta.btn1">Get the desktop app</a>
+            <a class="button button-secondary" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener" data-i18n="cta.btn2">Chrome extension</a>
+            <a class="button button-secondary" href="support.html" data-i18n="cta.btn3">Request pilot access</a>
           </div>
         </div>
       </div>
@@ -665,12 +661,12 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <div>&copy; 2026 MOM Shield</div>
+      <div data-i18n="footer.copyright">&copy; 2026 MOM Shield</div>
       <div class="footer-links">
-        <a href="video.html">Demo-Video</a>
-        <a href="privacy.html">Datenschutz</a>
-        <a href="support.html">Support &amp; Kontakt</a>
-        <a href="imprint.html">Impressum</a>
+        <a href="video.html" data-i18n="footer.demo">Demo video</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="support.html" data-i18n="footer.support">Support &amp; contact</a>
+        <a href="imprint.html" data-i18n="footer.imprint">Legal Notice</a>
       </div>
     </div>
   </footer>

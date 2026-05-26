@@ -3,105 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support - MOM Shield</title>
-  <meta name="description" content="Support information for MOM Shield - Privacy & PII Mask for ChatGPT, Claude, Gemini, Grok.">
+  <title data-i18n="support.title">Support - MOM Shield</title>
+  <meta name="description" data-i18n-attr="content:support.desc" content="Support information for MOM Shield - Privacy & PII Mask for ChatGPT, Claude, Gemini, Grok.">
   <link rel="icon" href="assets/icon48.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" data-i18n-attr="aria-label:nav.aria" aria-label="Main navigation">
       <a class="brand" href="index.html">
-        <img src="assets/icon48.png" alt="MOM Shield logo">
+        <img src="assets/icon48.png" data-i18n-attr="alt:brand.alt" alt="MOM Shield logo">
         <span>MOM Shield</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#features">Features</a>
-        <a href="video.html">Video</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-        <a href="imprint.html">Legal Notice</a>
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="video.html" data-i18n="nav.video">Video</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="imprint.html" data-i18n="nav.imprint">Legal Notice</a>
+        <span class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Choose language">
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="false">DE</button>
+        </span>
       </div>
     </nav>
   </header>
 
   <main>
     <div class="page-title">
-      <p class="section-kicker">Last updated: 2026-04-23</p>
-      <h1>Support</h1>
-      <p>Get help with installation, supported websites, file handling, and masking behavior.</p>
+      <p class="section-kicker" data-i18n="support.kicker">Last updated: 2026-04-23</p>
+      <h1 data-i18n="support.h1">Support</h1>
+      <p data-i18n="support.intro">Get help with installation, supported websites, file handling, and masking behavior.</p>
     </div>
 
     <article class="content">
       <section>
-        <h2>Contact</h2>
+        <h2 data-i18n="support.contact.h2">Contact</h2>
         <table class="meta-table">
           <tr>
-            <th>Support email</th>
+            <th data-i18n="support.contact.email">Support email</th>
             <td><a href="mailto:michael_werkmann@web.de">michael_werkmann@web.de</a></td>
           </tr>
           <tr>
-            <th>Website</th>
-            <td><a href="index.html">MOM Shield website</a></td>
+            <th data-i18n="support.contact.web">Website</th>
+            <td><a href="index.html" data-i18n="support.contact.web.link">MOM Shield website</a></td>
           </tr>
         </table>
       </section>
 
       <section>
-        <h2>Currently Supported</h2>
+        <h2 data-i18n="support.sup.h2">Currently Supported</h2>
         <ul>
-          <li>ChatGPT Web on chatgpt.com</li>
-          <li>ChatGPT Web on chat.openai.com</li>
-          <li>Claude/Anthropic Web on claude.ai</li>
-          <li>Gemini Web on gemini.google.com</li>
-          <li>Grok Web on grok.com</li>
-          <li>Grok on X at x.com/i/grok</li>
+          <li data-i18n="support.sup.li1">ChatGPT Web on chatgpt.com</li>
+          <li data-i18n="support.sup.li2">ChatGPT Web on chat.openai.com</li>
+          <li data-i18n="support.sup.li3">Claude/Anthropic Web on claude.ai</li>
+          <li data-i18n="support.sup.li4">Gemini Web on gemini.google.com</li>
+          <li data-i18n="support.sup.li5">Grok Web on grok.com</li>
+          <li data-i18n="support.sup.li6">Grok on X at x.com/i/grok</li>
         </ul>
       </section>
 
       <section>
-        <h2>Supported File Types</h2>
-        <p>MOM Shield can process txt, md, csv, json, xml, html, log, docx, xlsx, and text-based pdf files.</p>
+        <h2 data-i18n="support.files.h2">Supported File Types</h2>
+        <p data-i18n="support.files.p">MOM Shield can process txt, md, csv, json, xml, html, log, docx, xlsx, and text-based pdf files.</p>
       </section>
 
       <section>
-        <h2>Availability and Pricing</h2>
-        <p>MOM Shield is currently available free of charge. Optional paid features may be introduced in the future.</p>
+        <h2 data-i18n="support.price.h2">Availability and Pricing</h2>
+        <p data-i18n="support.price.p">MOM Shield is currently available free of charge. Optional paid features may be introduced in the future.</p>
       </section>
 
       <section>
-        <h2>Frequently Asked Questions</h2>
-        <h3>Is my data sent to MOM Shield?</h3>
-        <p>No. In the current version, MOM Shield processes content locally in your browser. There is no provider-operated masking server.</p>
+        <h2 data-i18n="support.faq.h2">Frequently Asked Questions</h2>
+        <h3 data-i18n="support.faq.q1">Is my data sent to MOM Shield?</h3>
+        <p data-i18n="support.faq.a1">No. In the current version, MOM Shield processes content locally in your browser. There is no provider-operated masking server.</p>
 
-        <h3>Why was a PDF blocked?</h3>
-        <p>PDF files are converted to text and then masked. If a PDF has no usable text layer, is encrypted, or cannot be safely extracted, MOM Shield blocks it instead of passing through the original file unchanged.</p>
+        <h3 data-i18n="support.faq.q2">Why was a PDF blocked?</h3>
+        <p data-i18n="support.faq.a2">PDF files are converted to text and then masked. If a PDF has no usable text layer, is encrypted, or cannot be safely extracted, MOM Shield blocks it instead of passing through the original file unchanged.</p>
 
-        <h3>Does MOM Shield support OCR for scanned PDFs?</h3>
-        <p>No. Scanned or image-only PDFs without a usable text layer are not OCR-processed in the current version.</p>
+        <h3 data-i18n="support.faq.q3">Does MOM Shield support OCR for scanned PDFs?</h3>
+        <p data-i18n="support.faq.a3">No. Scanned or image-only PDFs without a usable text layer are not OCR-processed in the current version.</p>
 
-        <h3>Why was a value not masked?</h3>
-        <p>MOM Shield uses local detection rules and context validation. Depending on wording and formatting, false negatives or false positives are possible.</p>
+        <h3 data-i18n="support.faq.q4">Why was a value not masked?</h3>
+        <p data-i18n="support.faq.a4">MOM Shield uses local detection rules and context validation. Depending on wording and formatting, false negatives or false positives are possible.</p>
 
-        <h3>Why can I not unmask a response?</h3>
-        <p>Unmasking requires active local history. If History is off or strict privacy mode is enabled, automatic response unmasking is disabled.</p>
+        <h3 data-i18n="support.faq.q5">Why can I not unmask a response?</h3>
+        <p data-i18n="support.faq.a5">Unmasking requires active local history. If History is off or strict privacy mode is enabled, automatic response unmasking is disabled.</p>
       </section>
 
       <section>
-        <h2>Report an Issue</h2>
-        <p>Please include browser version, affected AI chat website, date and time, affected feature, anonymized reproduction steps, and a screenshot or screen recording if helpful.</p>
+        <h2 data-i18n="support.report.h2">Report an Issue</h2>
+        <p data-i18n="support.report.p">Please include browser version, affected AI chat website, date and time, affected feature, anonymized reproduction steps, and a screenshot or screen recording if helpful.</p>
       </section>
     </article>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>&copy; 2026 MOM Shield. All rights reserved.</div>
+      <div data-i18n="footer.copyright.rights">&copy; 2026 MOM Shield. All rights reserved.</div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="video.html">Video</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="imprint.html">Legal Notice</a>
+        <a href="index.html" data-i18n="footer.home">Home</a>
+        <a href="video.html" data-i18n="footer.video">Video</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="imprint.html" data-i18n="footer.imprint">Legal Notice</a>
       </div>
     </div>
   </footer>

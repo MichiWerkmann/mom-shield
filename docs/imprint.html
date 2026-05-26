@@ -3,39 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Legal Notice - MOM Shield</title>
-  <meta name="description" content="Legal notice for MOM Shield - Privacy & PII Mask for ChatGPT, Claude, Gemini, Grok.">
+  <title data-i18n="imprint.title">Legal Notice - MOM Shield</title>
+  <meta name="description" data-i18n-attr="content:imprint.desc" content="Legal notice for MOM Shield - Privacy & PII Mask for ChatGPT, Claude, Gemini, Grok.">
   <link rel="icon" href="assets/icon48.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" data-i18n-attr="aria-label:nav.aria" aria-label="Main navigation">
       <a class="brand" href="index.html">
-        <img src="assets/icon48.png" alt="MOM Shield logo">
+        <img src="assets/icon48.png" data-i18n-attr="alt:brand.alt" alt="MOM Shield logo">
         <span>MOM Shield</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#features">Features</a>
-        <a href="video.html">Video</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-        <a href="imprint.html">Legal Notice</a>
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="video.html" data-i18n="nav.video">Video</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <a href="imprint.html" data-i18n="nav.imprint">Legal Notice</a>
+        <span class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Choose language">
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="false">DE</button>
+        </span>
       </div>
     </nav>
   </header>
 
   <main>
     <div class="page-title">
-      <p class="section-kicker">Provider information</p>
-      <h1>Legal Notice</h1>
-      <p>This page contains provider and contact information for MOM Shield.</p>
+      <p class="section-kicker" data-i18n="imprint.kicker">Provider information</p>
+      <h1 data-i18n="imprint.h1">Legal Notice</h1>
+      <p data-i18n="imprint.intro">This page contains provider and contact information for MOM Shield.</p>
     </div>
 
     <article class="content">
       <section>
-        <h2>Provider</h2>
-        <p>
+        <h2 data-i18n="imprint.s1.h2">Provider</h2>
+        <p data-i18n="imprint.s1.p">
           Michael Werkmann<br>
           Kolpingstreet 4<br>
           73453 Abtgmuend<br>
@@ -44,30 +49,30 @@
       </section>
 
       <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:michael_werkmann@web.de">michael_werkmann@web.de</a></p>
+        <h2 data-i18n="imprint.s2.h2">Contact</h2>
+        <p data-i18n="imprint.s2.p">Email: <a href="mailto:michael_werkmann@web.de">michael_werkmann@web.de</a></p>
       </section>
 
       <section>
-        <h2>Product</h2>
-        <p>MOM Shield - Privacy &amp; PII Mask for ChatGPT, Claude, Gemini, Grok is a browser extension for local masking of sensitive data before supported AI chat submissions.</p>
+        <h2 data-i18n="imprint.s3.h2">Product</h2>
+        <p data-i18n="imprint.s3.p">MOM Shield - Privacy &amp; PII Mask for ChatGPT, Claude, Gemini, Grok is a browser extension for local masking of sensitive data before supported AI chat submissions.</p>
       </section>
 
       <section>
-        <h2>Important Note</h2>
-        <p>This legal notice is a practical launch template. Before publishing internationally, verify whether additional legal details are required for your provider status, country, and target markets.</p>
+        <h2 data-i18n="imprint.s4.h2">Important Note</h2>
+        <p data-i18n="imprint.s4.p">This legal notice is a practical launch template. Before publishing internationally, verify whether additional legal details are required for your provider status, country, and target markets.</p>
       </section>
     </article>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>&copy; 2026 MOM Shield. All rights reserved.</div>
+      <div data-i18n="footer.copyright.rights">&copy; 2026 MOM Shield. All rights reserved.</div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="video.html">Video</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+        <a href="index.html" data-i18n="footer.home">Home</a>
+        <a href="video.html" data-i18n="footer.video">Video</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="footer.support.short">Support</a>
       </div>
     </div>
   </footer>

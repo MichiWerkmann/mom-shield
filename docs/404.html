@@ -3,16 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found - MOM Shield</title>
+  <title data-i18n="404.title">Page not found - MOM Shield</title>
   <link rel="icon" href="assets/icon48.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
   <main class="page-title">
-    <p class="section-kicker">404</p>
-    <h1>Page not found</h1>
-    <p>The page you requested does not exist.</p>
-    <p><a class="button" href="index.html">Go to homepage</a></p>
+    <p class="section-kicker" data-i18n="404.kicker">404</p>
+    <h1 data-i18n="404.h1">Page not found</h1>
+    <p data-i18n="404.p">The page you requested does not exist.</p>
+    <p><a class="button" href="index.html" data-i18n="404.btn">Go to homepage</a></p>
+    <p>
+      <span class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Choose language">
+        <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="false">DE</button>
+      </span>
+    </p>
   </main>
 </body>
 </html>
