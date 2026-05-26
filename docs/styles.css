@@ -1367,24 +1367,24 @@ h3 {
   -webkit-appearance: none;
   background: transparent;
   border: 0;
-  color: rgba(236, 244, 255, 0.70);
   font: inherit;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 4px 10px;
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 8px;
   border-radius: 999px;
   cursor: pointer;
-  transition: background .15s, color .15s;
+  filter: grayscale(0.6) opacity(0.6);
+  transition: filter .15s, background .15s, transform .15s;
 }
 
 .lang-btn:hover {
-  color: #ecf4ff;
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.05);
 }
 
 .lang-btn.lang-btn-active {
   background: rgba(89, 200, 255, 0.22);
-  color: #59c8ff;
+  filter: grayscale(0) opacity(1);
 }
 
 .lang-btn:focus-visible {
