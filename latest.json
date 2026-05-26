@@ -1,8 +1,8 @@
 {
-    "version":  "1.4.0",
-    "release_notes_url":  "https://github.com/MichiWerkmann/mom-shield/releases/tag/v1.4.0",
-    "sha256":  "7dfbfa94a8e14ced0fc8f950451a410c6fa3e4dd135aaf7db2fb4c7f1e633730",
-    "download_url":  "https://github.com/MichiWerkmann/mom-shield/releases/download/v1.4.0/MOM-Shield-Setup-1.4.0.exe",
-    "released_at":  "2026-05-26T09:34:04Z",
+    "version":  "1.5.0",
+    "release_notes_url":  "https://github.com/MichiWerkmann/mom-shield/releases/tag/v1.5.0",
+    "sha256":  "c8b54090a69040c863e218b1426393f1f723891b508a3909ac530cdefcc9fb33",
+    "download_url":  "https://github.com/MichiWerkmann/mom-shield/releases/download/v1.5.0/MOM-Shield-Setup-1.5.0.exe",
+    "released_at":  "2026-05-26T09:43:07Z",
     "minimum_version":  "0.5.0"
 }
