@@ -14,7 +14,7 @@
 
   const STORAGE_KEY = "momShieldLang";
   const SUPPORTED = ["en", "de"];
-  const DEFAULT_LANG = "en";
+  const DEFAULT_LANG = "de";
 
   const T = {
     de: {
@@ -28,6 +28,7 @@
       "nav.products": "Produkte",
       "nav.compliance": "Datenschutz",
       "nav.cta": "Download",
+      "nav.industry": "Branchen",
       "nav.features": "Funktionen",
       "nav.proof": "Beweis",
       "nav.demo": "Demo",
@@ -56,10 +57,38 @@
       "hero.btn.dl": "Jetzt herunterladen",
       "hero.btn.how": "So funktioniert's",
       "hero.pills.aria": "Vertrauenssignale",
-      "hero.pill.1": "🇩🇪 DSGVO-konform",
-      "hero.pill.2": "🔒 100 % lokal",
-      "hero.pill.3": "📋 Audit-Log",
+      "hero.pill.1": "🇩🇪 DSGVO-konform · Made in Germany",
+      "hero.pill.2": "🔒 100 % lokal — keine Cloud",
+      "hero.pill.3": "📋 Audit-Log mit CSV-Export",
       "hero.pill.4": "🌐 ChatGPT · Claude · Copilot · Gemini",
+      "hero.btn.chrome": "Chrome-Extension installieren",
+      "hero.video.aria": "Live-Beweis: KI sieht nur Platzhalter",
+      "hero.video.tag": "Live-Beweis",
+      "hero.video.cap": "Echte Maskierung in ChatGPT — Originaldaten bleiben auf Ihrem Gerät, die KI bekommt nur Platzhalter.",
+
+      /* ───────── industry section ───────── */
+      "industry.kicker": "Branchen-Fokus",
+      "industry.h2": "Konkrete Use Cases für Kanzlei und Versicherung.",
+      "industry.lead": "Sehen Sie in unter 2 Minuten, wie MOM Shield in den Alltag von Anwälten und Versicherern passt — vom ersten Mandantengespräch bis zur Schadenmeldung.",
+      "industry.video.src": "assets/usecases-de.mp4",
+      "industry.video.cap": "Drei Kanzlei-Use-Cases und drei Versicherungs-Use-Cases im Originalfluss.",
+      "industry.kanzlei.tag": "⚖️ Für Kanzleien",
+      "industry.kanzlei.h3": "Mandantschaft schützen, KI nutzen.",
+      "industry.kanzlei.p": "§&nbsp;43a BRAO bleibt gewahrt. MOM Shield greift bevor irgendetwas das Haus verlässt — sei es ein Schriftsatz, eine E-Mail-Antwort oder ein Mandantengespräch.",
+      "industry.kanzlei.u1": "Mandatsaufnahme strukturieren",
+      "industry.kanzlei.u2": "Schriftsatz auf Aufgaben und Risiken prüfen",
+      "industry.kanzlei.u3": "Mandantenkommunikation vorbereiten",
+      "industry.versicherung.tag": "🏥 Für Versicherer",
+      "industry.versicherung.h3": "Komplexe Fälle ordnen — ohne Art. 9 DSGVO zu reißen.",
+      "industry.versicherung.p": "Gesundheitsdaten, Schadenakten, BU-Leistungsprüfungen. KI hilft beim Strukturieren — und keine reale Personendaten landen bei OpenAI.",
+      "industry.versicherung.u1": "BU-Leistungsprüfung vorbereiten",
+      "industry.versicherung.u2": "Schadenmeldung triagieren",
+      "industry.versicherung.u3": "Mehrere Dokumente zu einem Fall gemeinsam auswerten",
+
+      /* ───────── founder card ───────── */
+      "founder.kicker": "Hinter dem Produkt",
+      "founder.line": "MOM Shield wird entwickelt von <strong>Michael Werkmann</strong> in Deutschland. Kein Investor-Druck, kein Cloud-Lock-in — sondern ein Werkzeug, das ich selbst in Mandats- und Beratungsprozessen einsetzen würde.",
+      "founder.meta": "Fragen, Pilot-Anfragen, Enterprise-Setup? <a href=\"support.html\">Direkter Kontakt →</a>",
       "hero.brand.aria": "MOM Shield Logo",
       "hero.scene.aria": "Maskierung vorher und nachher",
       "hero.scene.left.label": "Was Sie schreiben",
@@ -100,16 +129,14 @@
       "audience.card6.p": "Mitarbeiter wollen KI nutzen, der DSB sagt nein, die Geschäftsleitung will Produktivität. MOM Shield ist die technische Antwort, mit der alle drei zufrieden sind.",
 
       "workflow.kicker": "So funktioniert's",
-      "workflow.h2": "Vier Schritte. Kein zusätzlicher Aufwand.",
-      "workflow.lead": "Sie ändern nichts an Ihrem Arbeiten — MOM Shield greift im Hintergrund. Vom Tippen bis zur fertigen KI-Antwort bleibt alles natürlich.",
-      "workflow.step1.h3": "Sie tippen oder fügen ein",
-      "workflow.step1.p": "Wie gewohnt — E-Mail, Vertrag, Bewerberprofil, Tabellen-Auszug. Egal ob als Text in den Chat oder als Datei-Upload.",
-      "workflow.step2.h3": "MOM Shield erkennt &amp; maskiert",
-      "workflow.step2.p": "Personen, Adressen, IBANs, Telefonnummern, IDs, Geheimnisse — automatisch erkannt und durch sprechende Platzhalter ersetzt. Eigene Regeln pro Kunde / Mandanten ergänzbar.",
-      "workflow.step3.h3": "KI sieht nur Platzhalter",
-      "workflow.step3.p": "ChatGPT, Claude, Copilot, Gemini bekommen <code>[[PERSON_001]]</code> statt „Max Mustermann\". Die KI kann trotzdem strukturiert antworten — sie weiß nur nichts.",
-      "workflow.step4.h3": "Antwort wird lokal aufgelöst",
-      "workflow.step4.p": "Die Antwort enthält die gleichen Platzhalter — MOM Shield ersetzt sie auf Ihrem Gerät wieder durch die Originalwerte. Lesbar für Sie, unbekannt für die KI.",
+      "workflow.h2": "Drei Schritte. Kein Mehraufwand.",
+      "workflow.lead": "Sie ändern nichts an Ihrer Arbeitsweise — MOM Shield greift im Hintergrund. Vom Tippen bis zur fertigen KI-Antwort fühlt sich alles natürlich an.",
+      "workflow.step1.h3": "Eingeben oder einfügen",
+      "workflow.step1.p": "Ganz wie gewohnt — E-Mail, Vertrag, Kandidatenprofil. Egal ob als Chat-Text oder Datei-Upload.",
+      "workflow.step2.h3": "Erkennen, prüfen, maskieren",
+      "workflow.step2.p": "Personen, Adressen, IBANs, Aktenzeichen — automatisch erkannt und durch sprechende Platzhalter ersetzt. Optional bestätigen Sie die Regeln vor dem Senden.",
+      "workflow.step3.h3": "Antwort lokal entmaskieren",
+      "workflow.step3.p": "Die KI antwortet mit den gleichen Platzhaltern — MOM Shield setzt auf Ihrem Gerät die echten Werte wieder ein. Lesbar für Sie, unbekannt für die KI.",
 
       "products.kicker": "Zwei Produkte unter einer Marke",
       "products.h2": "Browser-Erweiterung für den Alltag. Desktop-App für sensible Dokumente.",
@@ -217,8 +244,8 @@
       "cta.kicker": "Bereit für sichere KI-Nutzung?",
       "cta.h2": "Drei Wege, MOM Shield kennenzulernen.",
       "cta.copy": "Probieren Sie die Chrome-Erweiterung kostenlos. Laden Sie die Desktop-App herunter und nutzen Sie sie im Pilot-Modus. Oder sprechen Sie uns für ein individuelles Setup an.",
-      "cta.btn1": "Desktop-App laden",
-      "cta.btn2": "Chrome-Erweiterung",
+      "cta.btn1": "Desktop-App herunterladen",
+      "cta.btn2": "oder die kostenlose Chrome-Extension installieren →",
       "cta.btn3": "Pilot-Anfrage stellen",
 
       /* ───────── video.html ───────── */
@@ -358,6 +385,72 @@
       "404.h1": "Seite nicht gefunden",
       "404.p": "Die angeforderte Seite existiert nicht.",
       "404.btn": "Zur Startseite"
+    },
+
+    /* ────────────────────────────────────────────────────────────────
+     * English overrides — only for keys whose source HTML is now in
+     * German. For everything else the engine restores the original HTML
+     * via data-i18n-src.
+     * ──────────────────────────────────────────────────────────────── */
+    en: {
+      "nav.industry": "Industries",
+
+      "index.title": "MOM Shield — Safe AI use for sensitive data",
+      "index.desc": "MOM Shield masks personal data, client information, and business secrets locally in your browser before they are sent to ChatGPT, Claude, or Copilot. Built for law firms, tax advisors, HR, and the privacy-sensitive mid-market.",
+
+      "hero.kicker": "Privacy layer for safe AI use",
+      "hero.h1": "Finally use AI — without exposing sensitive data.",
+      "hero.copy": "MOM Shield automatically detects personal data, client information, and business secrets and replaces them with safe placeholders — <strong>before</strong> they are sent to ChatGPT, Claude, Copilot, or other AI tools. The original data stays exclusively on your device.",
+      "hero.btn.dl": "Download now",
+      "hero.btn.chrome": "Install the Chrome extension",
+      "hero.pill.1": "🇪🇺 GDPR-compliant · Made in Germany",
+      "hero.pill.2": "🔒 100% local — no cloud",
+      "hero.pill.3": "📋 Audit log with CSV export",
+      "hero.pills.aria": "Trust signals",
+      "hero.video.aria": "Live proof: the AI only sees placeholders",
+      "hero.video.tag": "Live proof",
+      "hero.video.cap": "Real masking in ChatGPT — the original data stays on your device, the AI only sees placeholders.",
+
+      "industry.kicker": "Industry focus",
+      "industry.h2": "Concrete use cases for law firms and insurers.",
+      "industry.lead": "See in under 2 minutes how MOM Shield fits the daily work of attorneys and insurers — from the first client conversation to claim handling.",
+      "industry.video.src": "assets/usecases-en.mp4",
+      "industry.video.cap": "Three law-firm use cases and three insurance use cases in real workflow.",
+      "industry.kanzlei.tag": "⚖️ For law firms",
+      "industry.kanzlei.h3": "Protect the client. Use the AI.",
+      "industry.kanzlei.p": "Attorney–client privilege (§&nbsp;43a BRAO) stays intact. MOM Shield steps in before anything leaves the building — be it a brief, an email reply, or a client meeting note.",
+      "industry.kanzlei.u1": "Structure a new matter intake",
+      "industry.kanzlei.u2": "Review a brief for tasks and risks",
+      "industry.kanzlei.u3": "Prepare client communication",
+      "industry.versicherung.tag": "🏥 For insurers",
+      "industry.versicherung.h3": "Organize complex cases — without breaching Art. 9 GDPR.",
+      "industry.versicherung.p": "Health data, claim files, disability-benefit reviews. AI helps you structure — and no real personal data lands at OpenAI.",
+      "industry.versicherung.u1": "Prepare a disability-benefit review",
+      "industry.versicherung.u2": "Triage a claim notification",
+      "industry.versicherung.u3": "Analyze multiple documents on one case together",
+
+      "workflow.kicker": "How it works",
+      "workflow.h2": "Three steps. No extra effort.",
+      "workflow.lead": "You don't change how you work — MOM Shield steps in in the background. From typing to the final AI response, everything feels natural.",
+      "workflow.step1.h3": "Type or paste",
+      "workflow.step1.p": "As usual — email, contract, candidate profile. Whether as chat text or a file upload.",
+      "workflow.step2.h3": "Detect, confirm, mask",
+      "workflow.step2.p": "People, addresses, IBANs, case numbers — automatically detected and replaced with meaningful placeholders. Optionally confirm the rules before sending.",
+      "workflow.step3.h3": "Unmask the response locally",
+      "workflow.step3.p": "The AI replies with the same placeholders — MOM Shield substitutes the real values back in on your device. Readable for you, unknown to the AI.",
+
+      "products.browser.h3": "MOM Shield for ChatGPT &amp; Co.",
+
+      "founder.kicker": "Behind the product",
+      "founder.line": "MOM Shield is built by <strong>Michael Werkmann</strong> in Germany. No investor pressure, no cloud lock-in — a tool I would use myself in client and advisory work.",
+      "founder.meta": "Questions, pilot requests, enterprise setup? <a href=\"support.html\">Direct contact →</a>",
+
+      "compliance.bridge.priv": "→ Read the full privacy policy",
+      "compliance.bridge.imp": "Legal notice",
+      "compliance.bridge.req": "Submit a privacy request",
+
+      "cta.btn1": "Get the desktop app",
+      "cta.btn2": "or install the free Chrome extension →"
     }
   };
 
@@ -383,19 +476,16 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (!key) return;
-      if (!dict) {
-        // English fallback: restore from data-i18n-en if present
-        const fallback = el.getAttribute("data-i18n-en");
-        if (fallback !== null) el.innerHTML = fallback;
-        return;
+      // remember the source HTML on first apply so we can always restore it
+      if (!el.hasAttribute("data-i18n-src")) {
+        el.setAttribute("data-i18n-src", el.innerHTML);
       }
-      const val = dict[key];
+      const val = dict && dict[key];
       if (val !== undefined) {
-        // remember the original English on first switch so we can restore
-        if (!el.hasAttribute("data-i18n-en")) {
-          el.setAttribute("data-i18n-en", el.innerHTML);
-        }
         el.innerHTML = val;
+      } else {
+        // no translation in active dict → fall back to the original HTML source
+        el.innerHTML = el.getAttribute("data-i18n-src");
       }
     });
     // attribute translations: data-i18n-attr="attr1:key1;attr2:key2"
@@ -405,13 +495,13 @@
       spec.split(";").forEach((pair) => {
         const [attr, key] = pair.split(":").map((s) => s.trim());
         if (!attr || !key) return;
-        const origAttr = "data-i18n-en-" + attr;
+        const origAttr = "data-i18n-src-" + attr;
+        if (!el.hasAttribute(origAttr)) {
+          el.setAttribute(origAttr, el.getAttribute(attr) || "");
+        }
         if (dict && dict[key] !== undefined) {
-          if (!el.hasAttribute(origAttr)) {
-            el.setAttribute(origAttr, el.getAttribute(attr) || "");
-          }
           el.setAttribute(attr, dict[key]);
-        } else if (el.hasAttribute(origAttr)) {
+        } else {
           el.setAttribute(attr, el.getAttribute(origAttr));
         }
       });
