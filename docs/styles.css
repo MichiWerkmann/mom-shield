@@ -1691,7 +1691,8 @@ h3 {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-.image-masking-figure img {
+.image-masking-figure img,
+.image-masking-figure video {
   width: 100%;
   height: auto;
   display: block;
