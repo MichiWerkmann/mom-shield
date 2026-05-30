@@ -138,6 +138,17 @@
       "workflow.step3.h3": "Antwort lokal entmaskieren",
       "workflow.step3.p": "Die KI antwortet mit den gleichen Platzhaltern — MOM Shield setzt auf Ihrem Gerät die echten Werte wieder ein. Lesbar für Sie, unbekannt für die KI.",
 
+      "imgmask.kicker": "Neu in v1.8 · Gamechanger",
+      "imgmask.h2": "Jetzt auch Bilder &amp; gescannte Dokumente.",
+      "imgmask.lead": "MOM Shield ist der erste Privacy-Layer, der nicht nur Text, sondern auch Bilder, Screenshots und gescannte PDFs automatisch maskiert. Integrierte OCR erkennt sensible Inhalte direkt im Bild — und ersetzt sie wahlweise durch sprechende Platzhalter oder schwarze Balken. Genau hier heben wir uns von allen anderen ab.",
+      "imgmask.alt": "MOM Shield Image Masking — Placeholder oder Black Masking für Rechnungen, Ausweise, E-Mails und gescannte Dokumente",
+      "imgmask.c1.h3": "🖼️ Bilder &amp; Screenshots",
+      "imgmask.c1.p": "JPG, PNG und gescannte PDFs — Verträge, Ausweise, Rechnungen, Belege werden vor der KI-Verarbeitung lokal maskiert.",
+      "imgmask.c2.h3": "🔤 Placeholder Masking",
+      "imgmask.c2.p": "Sensible Inhalte werden durch strukturierte Platzhalter ersetzt — der Kontext bleibt erhalten, die KI kann weiterhin sinnvoll arbeiten.",
+      "imgmask.c3.h3": "■ Black Masking",
+      "imgmask.c3.p": "Für maximale Privatsphäre: Inhalte werden mit schwarzen Balken vollständig unkenntlich gemacht — wie eine klassische Schwärzung, nur automatisch.",
+
       "products.kicker": "Zwei Produkte unter einer Marke",
       "products.h2": "Browser-Erweiterung für den Alltag. Desktop-App für sensible Dokumente.",
       "products.lead": "Beide nutzen dieselbe Maskierungs-Engine, denselben Token-Standard und dieselben Sicherheitsmechanismen. Sie können beide parallel einsetzen — oder nur das, was Sie brauchen.",
@@ -438,6 +449,17 @@
       "workflow.step2.p": "People, addresses, IBANs, case numbers — automatically detected and replaced with meaningful placeholders. Optionally confirm the rules before sending.",
       "workflow.step3.h3": "Unmask the response locally",
       "workflow.step3.p": "The AI replies with the same placeholders — MOM Shield substitutes the real values back in on your device. Readable for you, unknown to the AI.",
+
+      "imgmask.kicker": "New in v1.8 · Gamechanger",
+      "imgmask.h2": "Now also images &amp; scanned documents.",
+      "imgmask.lead": "MOM Shield is the first privacy layer that doesn't just protect text — it also masks images, screenshots, and scanned PDFs automatically. Built-in OCR detects sensitive content directly inside the image and replaces it either with meaningful placeholders or with black redaction bars. This is where we stand apart from everyone else.",
+      "imgmask.alt": "MOM Shield Image Masking — placeholder or black masking for invoices, IDs, emails and scanned documents",
+      "imgmask.c1.h3": "🖼️ Images &amp; screenshots",
+      "imgmask.c1.p": "JPG, PNG and scanned PDFs — contracts, ID cards, invoices and receipts are masked locally before any AI sees them.",
+      "imgmask.c2.h3": "🔤 Placeholder masking",
+      "imgmask.c2.p": "Sensitive content is replaced with structured placeholders — context is preserved, so the AI can still do useful work.",
+      "imgmask.c3.h3": "■ Black masking",
+      "imgmask.c3.p": "For maximum privacy: content is covered with black bars and made completely unreadable — like classic redaction, just automatic.",
 
       "products.browser.h3": "MOM Shield for ChatGPT &amp; Co.",
 
