@@ -69,7 +69,8 @@
 
       <section>
         <h2 data-i18n="support.files.h2">Supported File Types</h2>
-        <p data-i18n="support.files.p">MOM Shield can process txt, md, csv, json, xml, html, log, docx, xlsx, and text-based pdf files.</p>
+        <p data-i18n="support.files.p"><strong>Browser extension:</strong> txt, md, csv, json, xml, html, log, docx, xlsx, and text-based PDF files.</p>
+        <p data-i18n="support.files.p2"><strong>Desktop app (v1.8+):</strong> additionally JPG, PNG, screenshots, and scanned / image-only PDFs. Built-in OCR detects sensitive content directly inside images and replaces it either with structured placeholders (context preserved for the AI) or with black redaction bars (maximum privacy). Processing is fully local — images never leave the device.</p>
       </section>
 
       <section>
@@ -82,11 +83,11 @@
         <h3 data-i18n="support.faq.q1">Is my data sent to MOM Shield?</h3>
         <p data-i18n="support.faq.a1">No. In the current version, MOM Shield processes content locally in your browser. There is no provider-operated masking server.</p>
 
-        <h3 data-i18n="support.faq.q2">Why was a PDF blocked?</h3>
-        <p data-i18n="support.faq.a2">PDF files are converted to text and then masked. If a PDF has no usable text layer, is encrypted, or cannot be safely extracted, MOM Shield blocks it instead of passing through the original file unchanged.</p>
+        <h3 data-i18n="support.faq.q2">Why was a PDF blocked in the browser extension?</h3>
+        <p data-i18n="support.faq.a2">In the <strong>browser extension</strong>, PDF files are converted to text and then masked. If a PDF has no usable text layer, is encrypted, or cannot be safely extracted, the extension blocks it instead of passing through the original file unchanged. For scanned or image-only PDFs, use the <strong>desktop app</strong> instead — it can OCR them locally and mask the recognized content.</p>
 
-        <h3 data-i18n="support.faq.q3">Does MOM Shield support OCR for scanned PDFs?</h3>
-        <p data-i18n="support.faq.a3">No. Scanned or image-only PDFs without a usable text layer are not OCR-processed in the current version.</p>
+        <h3 data-i18n="support.faq.q3">Does MOM Shield support OCR for scanned PDFs and images?</h3>
+        <p data-i18n="support.faq.a3"><strong>Yes — in the desktop app since v1.8.</strong> Scanned PDFs, screenshots, and image files (JPG, PNG) are processed locally by built-in OCR. Detected sensitive content is replaced either with structured placeholders (context preserved for the AI) or fully covered with black redaction bars. The <strong>browser extension</strong> does not include OCR yet — there, PDFs without a text layer remain blocked.</p>
 
         <h3 data-i18n="support.faq.q4">Why was a value not masked?</h3>
         <p data-i18n="support.faq.a4">MOM Shield uses local detection rules and context validation. Depending on wording and formatting, false negatives or false positives are possible.</p>
