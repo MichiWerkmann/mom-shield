@@ -377,18 +377,28 @@
 
       /* ───────── imprint.html ───────── */
       "imprint.title": "Impressum – MOM Shield",
-      "imprint.desc": "Impressum für MOM Shield – Privacy & PII Mask für ChatGPT, Claude, Gemini, Grok.",
-      "imprint.kicker": "Anbieter-Informationen",
+      "imprint.desc": "Impressum für MOM Shield – Privacy Layer für sichere KI-Nutzung mit sensiblen Daten.",
+      "imprint.kicker": "Angaben gemäß § 5 TMG",
       "imprint.h1": "Impressum",
-      "imprint.intro": "Diese Seite enthält Anbieter- und Kontaktinformationen für MOM Shield.",
+      "imprint.intro": "Diese Seite enthält die nach § 5 TMG vorgeschriebenen Anbieter- und Kontaktinformationen für MOM Shield.",
       "imprint.s1.h2": "Anbieter",
-      "imprint.s1.p": "Michael Werkmann<br>Kolpingstreet 4<br>73453 Abtgmuend<br>Deutschland",
+      "imprint.s1.p": "Michael Werkmann<br>Kolpingstraße 4<br>73453 Abtsgmünd<br>Deutschland",
       "imprint.s2.h2": "Kontakt",
       "imprint.s2.p": "E-Mail: <a href=\"mailto:michael_werkmann@web.de\">michael_werkmann@web.de</a>",
-      "imprint.s3.h2": "Produkt",
-      "imprint.s3.p": "MOM Shield – Privacy &amp; PII Mask für ChatGPT, Claude, Gemini, Grok ist eine Browser-Erweiterung zur lokalen Maskierung sensibler Daten vor dem Absenden an unterstützte KI-Chats.",
-      "imprint.s4.h2": "Wichtiger Hinweis",
-      "imprint.s4.p": "Dieses Impressum ist ein praktisches Launch-Template. Vor internationaler Veröffentlichung sollten Sie prüfen, ob für Ihren Anbieter-Status, Ihr Land und Ihre Zielmärkte zusätzliche rechtliche Angaben erforderlich sind.",
+      "imprint.s3.h2": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+      "imprint.s3.p": "Michael Werkmann<br>Kolpingstraße 4<br>73453 Abtsgmünd<br>Deutschland",
+      "imprint.s4.h2": "Produkt",
+      "imprint.s4.p": "MOM Shield ist eine lokal arbeitende Privacy-Layer-Software (Browser-Erweiterung und Windows-Desktop-Anwendung) zur Maskierung personenbezogener Daten, Mandanteninformationen und Geschäftsgeheimnisse vor dem Absenden an externe KI-Dienste wie ChatGPT, Claude, Copilot oder Gemini. Originaldaten werden ausschließlich auf dem Endgerät des Nutzers verarbeitet.",
+      "imprint.s5.h2": "EU-Streitbeilegung",
+      "imprint.s5.p": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href=\"https://ec.europa.eu/consumers/odr\" rel=\"noopener noreferrer\" target=\"_blank\">https://ec.europa.eu/consumers/odr</a>. Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+      "imprint.s6.h2": "Verbraucherstreitbeilegung / Universalschlichtungsstelle",
+      "imprint.s6.p": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+      "imprint.s7.h2": "Haftung für Inhalte",
+      "imprint.s7.p": "Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+      "imprint.s8.h2": "Haftung für Links",
+      "imprint.s8.p": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft; rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung jedoch nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+      "imprint.s9.h2": "Urheberrecht",
+      "imprint.s9.p": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.",
 
       /* ───────── 404.html ───────── */
       "404.title": "Seite nicht gefunden – MOM Shield",
@@ -472,7 +482,32 @@
       "compliance.bridge.req": "Submit a privacy request",
 
       "cta.btn1": "Get the desktop app",
-      "cta.btn2": "or install the free Chrome extension →"
+      "cta.btn2": "or install the free Chrome extension →",
+
+      /* ───────── imprint.html (EN overrides) ───────── */
+      "imprint.title": "Legal Notice – MOM Shield",
+      "imprint.desc": "Legal notice for MOM Shield – privacy layer for safe AI use with sensitive data.",
+      "imprint.kicker": "Information pursuant to § 5 TMG",
+      "imprint.h1": "Legal Notice",
+      "imprint.intro": "This page contains the provider and contact information for MOM Shield as required by § 5 of the German Telemedia Act (TMG).",
+      "imprint.s1.h2": "Provider",
+      "imprint.s1.p": "Michael Werkmann<br>Kolpingstraße 4<br>73453 Abtsgmünd<br>Germany",
+      "imprint.s2.h2": "Contact",
+      "imprint.s2.p": "Email: <a href=\"mailto:michael_werkmann@web.de\">michael_werkmann@web.de</a>",
+      "imprint.s3.h2": "Responsible for content under § 18 (2) MStV",
+      "imprint.s3.p": "Michael Werkmann<br>Kolpingstraße 4<br>73453 Abtsgmünd<br>Germany",
+      "imprint.s4.h2": "Product",
+      "imprint.s4.p": "MOM Shield is a locally operating privacy-layer software (browser extension and Windows desktop application) that masks personal data, client information, and trade secrets before they are submitted to external AI services such as ChatGPT, Claude, Copilot, or Gemini. Original data is processed exclusively on the user's device.",
+      "imprint.s5.h2": "EU dispute resolution",
+      "imprint.s5.p": "The European Commission provides a platform for online dispute resolution (ODR): <a href=\"https://ec.europa.eu/consumers/odr\" rel=\"noopener noreferrer\" target=\"_blank\">https://ec.europa.eu/consumers/odr</a>. Our email address can be found above.",
+      "imprint.s6.h2": "Consumer dispute resolution / Universal arbitration body",
+      "imprint.s6.p": "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration body.",
+      "imprint.s7.h2": "Liability for content",
+      "imprint.s7.p": "As a service provider we are responsible under § 7 (1) TMG for our own content on these pages in accordance with general law. According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances suggesting illegal activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect is only possible from the point in time at which a concrete legal violation becomes known. Upon becoming aware of such legal violations, we will remove the content immediately.",
+      "imprint.s8.h2": "Liability for links",
+      "imprint.s8.p": "Our offer contains links to external third-party websites whose content we have no influence over. We therefore cannot assume any liability for this external content. The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking; illegal content was not identifiable at that time. Permanent monitoring of the linked pages without specific indications of a legal violation is not reasonable. Upon becoming aware of legal violations, we will remove such links immediately.",
+      "imprint.s9.h2": "Copyright",
+      "imprint.s9.p": "The content and works on these pages created by the site operator are subject to German copyright law. Duplication, processing, distribution, and any form of commercialization of such material beyond the scope of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please notify us accordingly. Upon becoming aware of legal violations, we will remove such content immediately."
     }
   };
 
