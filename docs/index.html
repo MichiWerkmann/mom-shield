@@ -43,7 +43,7 @@
         <a href="#workflow" data-i18n="nav.workflow">So funktioniert's</a>
         <a href="#produkte" data-i18n="nav.products">Produkte</a>
         <a href="#compliance" data-i18n="nav.compliance">Datenschutz</a>
-        <a href="#download" class="nav-cta" data-i18n="nav.cta">Download</a>
+        <a href="support.html" class="nav-cta" data-i18n="nav.contact">Kontakt</a>
         <span class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Choose language">
           <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
           <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="false">DE</button>
@@ -69,8 +69,8 @@
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#download" data-i18n="hero.btn.dl">Jetzt herunterladen</a>
-              <a class="button button-secondary" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener" data-i18n="hero.btn.chrome">Chrome-Extension installieren</a>
+              <a class="button button-primary" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener" data-i18n="hero.btn.chrome">Chrome-Extension installieren</a>
+              <a class="button button-secondary" href="support.html" data-i18n="hero.btn.contact">Kontakt aufnehmen</a>
             </div>
 
             <div class="hero-pills" data-i18n-attr="aria-label:hero.pills.aria" aria-label="Vertrauenssignale">
@@ -414,7 +414,7 @@
             <h3 data-i18n="products.desktop.h3">MOM Shield Desktop</h3>
             <p class="product-summary" data-i18n="products.desktop.summary">
               Full Windows app for structured document work. Multi-user, audit
-              log, license management, MCP integration for Codex and Claude Code.
+              log, license management.
             </p>
             <ul class="product-features">
               <li data-i18n="products.desktop.f1">✅ Process PDF, DOCX, TXT, MD directly</li>
@@ -422,14 +422,12 @@
               <li data-i18n="products.desktop.f3">✅ Up to 10 users per installation</li>
               <li data-i18n="products.desktop.f4">✅ Admin roles &amp; permissions</li>
               <li data-i18n="products.desktop.f5">✅ Strict mode: mandatory review before sending</li>
-              <li data-i18n="products.desktop.f6">✅ MCP server for Codex / Claude Code integration</li>
               <li data-i18n="products.desktop.f7">✅ Automatic updates</li>
             </ul>
             <div class="product-meta">
               <p data-i18n="products.desktop.meta1"><strong>Ideal for:</strong> law firms, tax practices, HR teams, privacy-sensitive teams</p>
-              <p data-i18n="products.desktop.meta2"><strong>System:</strong> Windows 10 / 11 · 64-bit</p>
             </div>
-            <a class="button button-primary" href="#download" data-i18n="products.desktop.cta">Download the desktop app</a>
+            <a class="button button-primary" href="support.html" data-i18n="products.desktop.cta">Request a pilot</a>
           </article>
         </div>
       </div>
@@ -511,82 +509,6 @@
       </div>
     </section>
 
-    <!-- ═══════════════ DOWNLOAD ═══════════════ -->
-    <section class="section section-dark download-section" id="download">
-      <div class="shell">
-        <p class="section-kicker" data-i18n="download.kicker">Download</p>
-        <h2 data-i18n="download.h2">MOM Shield for Windows</h2>
-        <p class="lead" data-i18n="download.lead">
-          Direct installer for the desktop app. Per-user installation under
-          <code>%LOCALAPPDATA%</code> — no admin rights, no cloud account.
-          Updates arrive automatically.
-        </p>
-
-        <div class="download-card">
-          <div class="download-card-left">
-            <p class="download-version"><span data-i18n="download.version">Version</span> <span id="dl-version">…</span></p>
-            <p class="download-meta" id="dl-meta" data-i18n="download.meta">Loading…</p>
-            <ul class="download-features">
-              <li data-i18n="download.f1">🛡️ Local pseudonymization — no cloud</li>
-              <li data-i18n="download.f2">📋 Audit log + CSV export for compliance</li>
-              <li data-i18n="download.f3">🔄 Automatic updates via signed manifest</li>
-              <li data-i18n="download.f4">👥 Multi-user with admin role</li>
-              <li data-i18n="download.f5">🔌 MCP endpoint for Codex and Claude Code</li>
-            </ul>
-          </div>
-          <div class="download-card-right">
-            <a class="button button-primary download-btn" id="dl-button"
-               href="https://github.com/MichiWerkmann/mom-shield/releases/latest"
-               rel="noopener" data-i18n="download.btn">⬇ Download installer</a>
-            <p class="download-system" data-i18n="download.system">Windows 10 / 11 · 64-bit · ~32 MB</p>
-            <p class="download-note" data-i18n="download.note">
-              Currently in <strong>pilot phase</strong>. Commercial licenses
-              <a href="support.html">on request</a>.
-            </p>
-          </div>
-        </div>
-
-        <details class="download-extras">
-          <summary data-i18n="download.extras.summary">More options &amp; technical details</summary>
-          <ul>
-            <li data-i18n="download.extras.li1"><a href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener">Chrome extension</a> — free entry point for ChatGPT &amp; Co.</li>
-            <li data-i18n="download.extras.li2"><a href="https://github.com/MichiWerkmann/mom-shield/releases" rel="noopener">All versions + release notes</a> on GitHub</li>
-            <li data-i18n="download.extras.li3">SHA-256 checksum: <code id="dl-sha">…</code></li>
-            <li data-i18n="download.extras.li4">System requirement: Windows 10 (1809+) or Windows 11, WebView2 runtime (preinstalled on Win11)</li>
-          </ul>
-        </details>
-
-        <script>
-          (async function () {
-            try {
-              const r = await fetch("https://raw.githubusercontent.com/MichiWerkmann/mom-shield/main/latest.json", { cache: "no-store" });
-              if (!r.ok) return;
-              const m = await r.json();
-              if (m.download_url) document.getElementById("dl-button").href = m.download_url;
-              if (m.version) {
-                document.getElementById("dl-version").textContent = "v" + m.version;
-                const lang = (window.MomShieldI18n && window.MomShieldI18n.getLang && window.MomShieldI18n.getLang()) || "en";
-                const titles = {
-                  en: "MOM Shield " + m.version + " — Safe AI use for sensitive data",
-                  de: "MOM Shield " + m.version + " — Sichere KI-Nutzung für sensible Daten"
-                };
-                document.title = titles[lang] || titles.en;
-              }
-              if (m.released_at) {
-                const lang = (window.MomShieldI18n && window.MomShieldI18n.getLang && window.MomShieldI18n.getLang()) || "en";
-                const d = new Date(m.released_at);
-                const locale = lang === "de" ? "de-DE" : "en-US";
-                const label = lang === "de" ? "Veröffentlicht am " : "Released on ";
-                document.getElementById("dl-meta").textContent =
-                  label + d.toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
-              }
-              if (m.sha256) document.getElementById("dl-sha").textContent = m.sha256;
-            } catch { /* keep fallback */ }
-          })();
-        </script>
-      </div>
-    </section>
-
     <!-- ═══════════════ FAQ ═══════════════ -->
     <section class="section section-light" id="faq">
       <div class="shell">
@@ -599,9 +521,8 @@
             <p data-i18n="faq.a1">
               <strong>No.</strong> There is no central MOM Shield server that
               could receive your data. Masking runs entirely on your device — in
-              the browser or the desktop app. Even updates and license checks
-              happen offline; only the updater manifest and installer downloads
-              come from the public GitHub repository.
+              the browser or the desktop app. Updates and license checks happen
+              offline.
             </p>
           </details>
 
@@ -687,14 +608,14 @@
       <div class="shell">
         <div class="notice notice-strong">
           <p class="notice-kicker" data-i18n="cta.kicker">Ready for safe AI use?</p>
-          <h2 data-i18n="cta.h2">Three ways to get to know MOM Shield.</h2>
+          <h2 data-i18n="cta.h2">Two ways to get to know MOM Shield.</h2>
           <p data-i18n="cta.copy">
-            Try the Chrome extension for free. Download the desktop app and
-            use it in pilot mode. Or talk to us about an individual setup.
+            Try the Chrome extension for free. Or talk to us about the desktop
+            app and an individual pilot setup.
           </p>
           <div class="closing-actions closing-actions-focused">
-            <a class="button button-primary button-lg" href="#download" data-i18n="cta.btn1">Desktop-App herunterladen</a>
-            <a class="text-link" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener" data-i18n="cta.btn2">oder die kostenlose Chrome-Extension installieren →</a>
+            <a class="button button-primary button-lg" href="https://chromewebstore.google.com/detail/mom-shield-privacy-pii-ma/cbogcmmcpmhjggmpdbmipncdpmigfjaj" rel="noopener" data-i18n="cta.btn2">Kostenlose Chrome-Extension installieren</a>
+            <a class="text-link" href="support.html" data-i18n="cta.btn3">oder Pilot-Anfrage stellen →</a>
           </div>
         </div>
       </div>
